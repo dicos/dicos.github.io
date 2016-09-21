@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+	<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Косолапов Дмитрий">
+
+
+        <title>Косолапов Дмитрий: мысли умные и не только. - AttributeError: 'module' object has no attribute 'Migration'</title>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/theme/css/style.css">
+
+        <!-- Custom CSS -->
+        	<link rel="stylesheet" href="/theme/css/colors/blue.css" id="colors">
+
+        <!-- Code highlight color scheme -->
+            <link href="/theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="Косолапов Дмитрий: мысли умные и не только.">
+
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="">
+	<meta property="og:url" content="/attributeerror-module-object-has-no-attribute-migration.html">
+	<meta property="og:title" content="AttributeError: 'module' object has no attribute 'Migration'">
+	<meta property="og:description" content="">
+	   <meta property="og:image" content="/images/guilherme-toti.jpg">
+	<meta property="article:published_time" content="2013-01-12 14:11:00+07:00">
+	</head>
+	<body>
+		<header id="header">
+			<!-- Container -->
+			<div class="container">
+				<!-- Logo / Mobile Menu -->
+				<div class="nine.columns columns">
+					<div id="logo">
+						<h1><a href="/">Косолапов Дмитрий: мысли умные и не только.</a></h1>
+					</div>
+				</div>
+				<!-- Navigation
+				================================================== -->
+				<div class="seven columns">
+					
+					<nav id="navigation" class="menu">
+						<ul id="responsive">
+
+							<li><a href="/">Главная</a></li>
+
+
+							        <li><a href="/about.html">Обо мне</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Container / End -->
+		</header>
+		<!-- Header / End -->
+		
+		<div id="content-wrapper">
+			<section id="titlebar">
+				<!-- Container -->
+				<div class="container">
+					<div class="sixteen columns">						
+						<nav id="breadcrumbs">
+							<ul>
+								<li>Текущее нахождение:</li>
+								<li><a href="/">Главная</a></li>
+<li><a href="/category/vne-kategorii.html">вне категорий</a></li>
+<li>AttributeError: 'module' object has no attribute 'Migration'</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+				<!-- Container / End -->
+			</section>
+
+			<div class="container">
+	<div class="twelve alt columns">
+<article class="post" style="margin: 0; border: 0;">
+	
+	<div class="post-format">
+		<div class="circle"><i class="icon-pencil"></i><span></span></div>
+	</div>
+
+	<section class="post-content">
+
+		<header class="meta">
+			<h2><a href="/attributeerror-module-object-has-no-attribute-migration.html">AttributeError: 'module' object has no attribute 'Migration'</a></h2>
+			<ul>
+				<li>By <a href="/author/admin.html">admin</a></li>
+				<li>Сб 12 Январь 2013</li>
+			</ul>
+		</header>
+
+		<p>В проекте, над которым сейчас работаю, используется south -- стороннее
+&nbsp;приложение для фреймворка джанго. Суть в следующем: в джанге есть
+библиотека для работы с базами данных. Работа с базой данных
+осуществляется через специальные классы-модели, которые пишет сам
+программист, исходя из структуры базы данных.</p>
+<p>Периодически, базу данных необходимо изменять, например добавить пару
+полей в таблицу. Обычно, эта работа происходит так: добавляются в
+модель-таблицу новые &quot;поля&quot; (возможно, корректнее всего назвать
+атрибутами класса). Затем, выполняем в терминале команду вычислить
+изменения между тем, что было и тем, что стало. В этот момент создаются
+файлы изменений. Потом выполняется команда применить эти изменения в
+базе данных.</p>
+<p>Вчера, во время применения изменений появилась такая ошибка:</p>
+<blockquote>
+<div class="line-block">
+<div class="line">Traceback (most recent call last):</div>
+<div class="line">File &quot;./manage.py&quot;, line 15, in &lt;module&gt;</div>
+<div class="line">execute_manager(settings)</div>
+<div class="line">File
+&quot;/somepath/local/lib/python2.7/site-packages/django/core/management/__init__.py&quot;,
+line 438, in execute_manager</div>
+<div class="line">utility.execute()</div>
+<div class="line">File
+&quot;/somepath/local/lib/python2.7/site-packages/django/core/management/__init__.py&quot;,
+line 379, in execute</div>
+<div class="line">self.fetch_command(subcommand).run_from_argv(self.argv)</div>
+<div class="line">File
+&quot;/somepath/local/lib/python2.7/site-packages/django/core/management/base.py&quot;,
+line 191, in run_from_argv</div>
+<div class="line">self.execute(*args, **options.__dict__)</div>
+<div class="line">File
+&quot;/somepath/local/lib/python2.7/site-packages/django/core/management/base.py&quot;,
+line 220, in execute</div>
+<div class="line">output = self.handle(*args, **options)</div>
+<div class="line">File
+&quot;/somepathe/local/lib/python2.7/site-packages/south/management/commands/migrate.py&quot;,
+line 107, in handle</div>
+<div class="line">ignore_ghosts = ignore_ghosts,</div>
+<div class="line">File
+&quot;/somepath/local/lib/python2.7/site-packages/south/migration/__init__.py&quot;,
+line 166, in migrate_app</div>
+<div class="line">Migrations.calculate_dependencies()</div>
+<div class="line">File
+&quot;/somepath/local/lib/python2.7/site-packages/south/migration/base.py&quot;,
+line 227, in calculate_dependencies</div>
+<div class="line">migration.calculate_dependencies()</div>
+<div class="line">File
+&quot;/somepath/local/lib/python2.7/site-packages/south/migration/base.py&quot;,
+line 358, in calculate_dependencies</div>
+<div class="line">for migration in self._get_dependency_objects(&quot;depends_on&quot;):</div>
+<div class="line">File
+&quot;/somepath/local/lib/python2.7/site-packages/south/migration/base.py&quot;,
+line 338, in _get_dependency_objects</div>
+<div class="line">for app, name in getattr(self.migration_class(), attrname, []):</div>
+<div class="line">File
+&quot;/somepath/local/lib/python2.7/site-packages/south/migration/base.py&quot;,
+line 310, in migration_class</div>
+<div class="line">return self.migration().Migration</div>
+<div class="line">AttributeError: 'module' object has no attribute 'Migration'</div>
+</div>
+</blockquote>
+<p>Эта ошибка ни как не связана с версией south, делал откат с версии 0.7.6
+до 0.7.4. Ошибка появлялась из-за того, что в нескольких приложениях
+сайта, файлы миграций были пустые. Пришлось просто удалить пустые файлы
+и заново инициализировать миграции. После этого, мое изменение в базе
+данных прошло успешно.</p>
+
+
+
+<div class="sharing">
+</div>
+<hr>
+		
+	</section>
+	<div class="clearfix"></div>
+
+</article>
+
+	</div>
+
+	<!-- Sidebar -->
+	<div class="four columns">
+
+		
+	</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Content Wrapper / End -->
+
+
+		<div id="footer-bottom">
+			<!-- Container -->
+			<div class="container">
+				<div class="eight columns">Blog powered by <a href="http://getpelican.com">Pelican</a></div>
+					<div class="eight columns">
+						<ul class="social-icons-footer">
+								<li>
+									<a href="#" class="tooltip top" title="You can add links in your config file">
+										<i class="icon-you can add links in your config file"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltip top" title="Another social link">
+										<i class="icon-another social link"></i>
+									</a>
+								</li>
+							<li><a href="/None" class="tooltip top" title="RSS"><i class="icon-rss"></i></a></li>
+						</ul>
+					</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Footer Bottom / End -->
+		
+	<!-- Javascripts -->
+	<script src="/theme/js/jquery.min.js"></script>
+	</body>
+</html>

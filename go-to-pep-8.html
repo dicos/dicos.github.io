@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+	<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Косолапов Дмитрий">
+
+
+        <title>Косолапов Дмитрий: мысли умные и не только. - К PEP 8!</title>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/theme/css/style.css">
+
+        <!-- Custom CSS -->
+        	<link rel="stylesheet" href="/theme/css/colors/blue.css" id="colors">
+
+        <!-- Code highlight color scheme -->
+            <link href="/theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="Косолапов Дмитрий: мысли умные и не только.">
+
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="">
+	<meta property="og:url" content="/go-to-pep-8.html">
+	<meta property="og:title" content="К PEP 8!">
+	<meta property="og:description" content="">
+	   <meta property="og:image" content="/images/guilherme-toti.jpg">
+	<meta property="article:published_time" content="2012-04-20 23:58:00+07:00">
+	</head>
+	<body>
+		<header id="header">
+			<!-- Container -->
+			<div class="container">
+				<!-- Logo / Mobile Menu -->
+				<div class="nine.columns columns">
+					<div id="logo">
+						<h1><a href="/">Косолапов Дмитрий: мысли умные и не только.</a></h1>
+					</div>
+				</div>
+				<!-- Navigation
+				================================================== -->
+				<div class="seven columns">
+					
+					<nav id="navigation" class="menu">
+						<ul id="responsive">
+
+							<li><a href="/">Главная</a></li>
+
+
+							        <li><a href="/about.html">Обо мне</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Container / End -->
+		</header>
+		<!-- Header / End -->
+		
+		<div id="content-wrapper">
+			<section id="titlebar">
+				<!-- Container -->
+				<div class="container">
+					<div class="sixteen columns">						
+						<nav id="breadcrumbs">
+							<ul>
+								<li>Текущее нахождение:</li>
+								<li><a href="/">Главная</a></li>
+<li><a href="/category/python.html">python</a></li>
+<li>К PEP 8!</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+				<!-- Container / End -->
+			</section>
+
+			<div class="container">
+	<div class="twelve alt columns">
+<article class="post" style="margin: 0; border: 0;">
+	
+	<div class="post-format">
+		<div class="circle"><i class="icon-pencil"></i><span></span></div>
+	</div>
+
+	<section class="post-content">
+
+		<header class="meta">
+			<h2><a href="/go-to-pep-8.html">К PEP 8!</a></h2>
+			<ul>
+				<li>By <a href="/author/admin.html">admin</a></li>
+				<li>Пт 20 Апрель 2012</li>
+			</ul>
+		</header>
+
+		<p><a class="reference external" href="http://www.python.org/dev/peps/pep-0008/">PEP 8</a> это стандарт
+форматирования кода языка питон.</p>
+<p>Придерживаться его желательно, так как во многих случаях код становится
+более понятным (и более простым!). Так сложилось, что сам (каюсь-каюсь)
+придерживался больше своего, внутреннего стандарта. Но случилось
+непоправимое. Появилось требование к проекту, что программный код должен
+строго соответствовать стандарту PEP 8.</p>
+<p>Так как мой редактор gEdit не умеет&nbsp;подсвечивать&nbsp;ошибки в
+форматировании, пришлось искать какой-то сторонний модуль. И такой
+модуль есть: <a class="reference external" href="http://pypi.python.org/pypi/pep8/">pep8</a>. Работаю с ним
+так: в&nbsp;консоли&nbsp;пишем pep8 &lt;имя_файла&gt;. На экране видим все ошибки. Но
+можно посмотреть ошибки во всех файлах, написав pep8 *.py. Тогда будут
+видны все ошибки в файлах, что находятся в текущем каталоге.</p>
+<p>Руками удалять лишние пробелы да запятые трудоемко. Поэтому можно
+воспользоваться автоматическим форматированием. Такую возможность
+предоставляет модуль
+<a class="reference external" href="http://pypi.python.org/pypi/autopep8/">autopep08</a>. Работает отлично.
+Не умеет только обрабатывать ошибки в длине строки (длина строки должна
+быть 79 символов.) Я работал так:&nbsp;autopep8 &lt;текущий_файл&gt; &gt;
+&lt;новый_файл&gt; . А дальше сравнивал и искал где у меня ошибки.</p>
+
+
+
+<div class="sharing">
+</div>
+<hr>
+		
+	</section>
+	<div class="clearfix"></div>
+
+</article>
+
+	</div>
+
+	<!-- Sidebar -->
+	<div class="four columns">
+
+		
+	</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Content Wrapper / End -->
+
+
+		<div id="footer-bottom">
+			<!-- Container -->
+			<div class="container">
+				<div class="eight columns">Blog powered by <a href="http://getpelican.com">Pelican</a></div>
+					<div class="eight columns">
+						<ul class="social-icons-footer">
+								<li>
+									<a href="#" class="tooltip top" title="You can add links in your config file">
+										<i class="icon-you can add links in your config file"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltip top" title="Another social link">
+										<i class="icon-another social link"></i>
+									</a>
+								</li>
+							<li><a href="/None" class="tooltip top" title="RSS"><i class="icon-rss"></i></a></li>
+						</ul>
+					</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Footer Bottom / End -->
+		
+	<!-- Javascripts -->
+	<script src="/theme/js/jquery.min.js"></script>
+	</body>
+</html>

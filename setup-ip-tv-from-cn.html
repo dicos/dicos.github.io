@@ -1,0 +1,570 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+	<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Косолапов Дмитрий">
+
+
+        <title>Косолапов Дмитрий: мысли умные и не только. - Настройка IP телевидения от &quot;Электронного Города&quot;</title>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/theme/css/style.css">
+
+        <!-- Custom CSS -->
+        	<link rel="stylesheet" href="/theme/css/colors/blue.css" id="colors">
+
+        <!-- Code highlight color scheme -->
+            <link href="/theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="Косолапов Дмитрий: мысли умные и не только.">
+
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="">
+	<meta property="og:url" content="/setup-ip-tv-from-cn.html">
+	<meta property="og:title" content="Настройка IP телевидения от &quot;Электронного Города&quot;">
+	<meta property="og:description" content="">
+	   <meta property="og:image" content="/images/guilherme-toti.jpg">
+	<meta property="article:published_time" content="2011-01-02 13:21:00+06:00">
+	</head>
+	<body>
+		<header id="header">
+			<!-- Container -->
+			<div class="container">
+				<!-- Logo / Mobile Menu -->
+				<div class="nine.columns columns">
+					<div id="logo">
+						<h1><a href="/">Косолапов Дмитрий: мысли умные и не только.</a></h1>
+					</div>
+				</div>
+				<!-- Navigation
+				================================================== -->
+				<div class="seven columns">
+					
+					<nav id="navigation" class="menu">
+						<ul id="responsive">
+
+							<li><a href="/">Главная</a></li>
+
+
+							        <li><a href="/about.html">Обо мне</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Container / End -->
+		</header>
+		<!-- Header / End -->
+		
+		<div id="content-wrapper">
+			<section id="titlebar">
+				<!-- Container -->
+				<div class="container">
+					<div class="sixteen columns">						
+						<nav id="breadcrumbs">
+							<ul>
+								<li>Текущее нахождение:</li>
+								<li><a href="/">Главная</a></li>
+<li><a href="/category/sisadminstvo.html">сисадминство</a></li>
+<li>Настройка IP телевидения от &quot;Электронного Города&quot;</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+				<!-- Container / End -->
+			</section>
+
+			<div class="container">
+	<div class="twelve alt columns">
+<article class="post" style="margin: 0; border: 0;">
+	
+	<div class="post-format">
+		<div class="circle"><i class="icon-pencil"></i><span></span></div>
+	</div>
+
+	<section class="post-content">
+
+		<header class="meta">
+			<h2><a href="/setup-ip-tv-from-cn.html">Настройка IP телевидения от &quot;Электронного Города&quot;</a></h2>
+			<ul>
+				<li>By <a href="/author/admin.html">admin</a></li>
+				<li>Вс 02 Январь 2011</li>
+			</ul>
+		</header>
+
+		<p>У нас имеется шлюз, раздающий интернет. В качестве шлюза был взят
+немного устаревший компьютер, в качестве ОС установлена убунта 10.10.
+Чтобы избежать недомолвок сообщаю, о том, что интернет этот компьютер
+уже разадавал</p>
+<p>Для начала нужно установить
+<a class="reference external" href="http://sourceforge.net/projects/igmpproxy/">igmpproxy</a>:</p>
+<blockquote>
+<div class="line-block">
+<div class="line">качаем:</div>
+<div class="line">wget
+<a class="reference external" href="http://downloads.sourceforge.net/project/igmpproxy/igmpproxy/0.1/igmpproxy-0.1.tar.gz">http://downloads.sourceforge.net/project/igmpproxy/igmpproxy/0.1/igmpproxy-0.1.tar.gz</a></div>
+<div class="line">распаковываем:</div>
+<div class="line">tar -xvf igmpproxy-0.1.tar.gz</div>
+<div class="line">заходим в каталог:</div>
+<div class="line">cd igmpproxy-0.1/</div>
+<div class="line">запускаем скрипт для поиска необходимых библиотек.</div>
+<div class="line">./configure</div>
+<div class="line">у меня на &nbsp;этом этапе появилась ошибка о том, что нет компилятора
+C++. Текст ошибки не помню, эту запись пишу по памяти.
+Устанавливаем:</div>
+<div class="line">aptitude install gcc</div>
+<div class="line">еще раз запускаем &nbsp;./configure</div>
+<div class="line">запускаем процесс компиляции:</div>
+<div class="line">make</div>
+<div class="line">устанавливаем:</div>
+<div class="line">make install</div>
+</div>
+</blockquote>
+<div class="line-block">
+<div class="line">После успешного выполнения команд, настраиваем то, что установили:</div>
+<div class="line">nano /usr/local/etc/igmpproxy.conf</div>
+<div class="line">Содержимое моего файла такое:</div>
+</div>
+<blockquote>
+<div id="_mcePaste"><p>quickleave</p>
+</div><div id="_mcePaste"><p>phyint eth0 upstream ratelimit 0 threshold 1</p>
+</div><div id="_mcePaste"><div id="_mcePaste"><p>altnet 10.0.0.0/8</p>
+</div><div id="_mcePaste"><p>altnet 178.0.0.0/8</p>
+</div><div id="_mcePaste"><p>altnet 238.0.0.0/8</p>
+</div><div id="_mcePaste"><p>altnet 239.0.0.0/8</p>
+</div><div id="_mcePaste"><p>altnet 224.0.0.0/8</p>
+</div></div><div id="_mcePaste"><div id="_mcePaste"><p>phyint eth1 downstream &nbsp;ratelimit 0 &nbsp;threshold 1</p>
+</div><div id="_mcePaste"><p>&nbsp; &nbsp; &nbsp; &nbsp; altnet 192.168.1.0/24</p>
+</div></div><div id="_mcePaste"><p>phyint eth2 disabled</p>
+</div></blockquote>
+<div><p>eth0 -- интерфейс, в который &quot;воткнут&quot; интернет
+eth1 -- интерфейс, в котором &quot;воткнута&quot; локальная сеть</p>
+</div><div><p>Пробуем запустить:&nbsp;/usr/local/sbin/igmpproxy
+/usr/local/etc/igmpproxy.conf&amp;
+Проверяем: sysctl -a | grep forward | grep v4
+результат п римерно должен быть таким:</p>
+</div>
+
+ .. raw:: html
+
+    <div>
+
+ .. raw:: html
+
+    <div>
+
+ net.ipv4.conf.all.forwarding = 1
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ net.ipv4.conf.all.mc\_forwarding = 1
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ net.ipv4.conf.default.forwarding = 1
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ net.ipv4.conf.default.mc\_forwarding = 0
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ net.ipv4.conf.lo.forwarding = 1
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ net.ipv4.conf.lo.mc\_forwarding = 0
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ net.ipv4.conf.eth0.forwarding = 1
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ net.ipv4.conf.eth0.mc\_forwarding = 1
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ net.ipv4.conf.eth1.forwarding = 1
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ net.ipv4.conf.eth1.mc\_forwarding = 1
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ net.ipv4.ip\_forward = 1
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    </div><div><p>Далее, настраиваем правила для фаервола (сети не самый мой лучший конек,
+возможно что-то сделано неоптимально):</p>
+</div>
+
+ .. raw:: html
+
+    <div>
+
+ .. raw:: html
+
+    <div>
+
+ iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ iptables -A INPUT -i lo -j ACCEPT
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ iptables -A INPUT -p igmp -j ACCEPT
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ iptables -A FORWARD -s 178.49.xxx.xxx/24 -p udp -j ACCEPT
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ iptables -A INPUT -s 192.168.1.0/255.255.255.0 -i eth1 -j ACCEPT
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ iptables -A FORWARD -s 192.168.1.0/24 -p udp -j ACCEPT
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ iptables -t nat -A POSTROUTING -s 192.168.1.0/255.255.255.0 -j
+ MASQUERADE
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    </div><div><p>Проверяем, все должно работать. Если нет, то ищем проблемы, что сделано
+не так :-)</p>
+</div><div><p>Если все заработало, то создаем скрипт запуска нашего&nbsp;igmpproxy:</p>
+</div>
+
+ .. raw:: html
+
+    <div>
+
+ touch /etc/init.d/igmpproxy
+ nano /etc/init.d/igmpproxy
+ у нас должен открыться редактор, в него вписываем:
+
+ .. raw:: html
+
+    </p>
+
+ .. raw:: html
+
+    <div>
+
+ #!/bin/sh
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ /usr/local/sbin/igmpproxy /usr/local/etc/igmpproxy.conf&
+
+ .. raw:: html
+
+    </div><div><p>Перезагружаем шлюз, все должно работать.</p>
+</div><div><p>Если ни чего не получается, то запускаем igmpproxy в режиме
+отладки:&nbsp;/usr/local/sbin/igmpproxy /usr/local/etc/igmpproxy.conf -d</p>
+</div><div><p>Должны появиться такие сообщения:</p>
+</div>
+
+ .. raw:: html
+
+    <div>
+
+ .. raw:: html
+
+    <div>
+
+ The source address 178.49.131.35 for group 239.1.1.2, is not in any
+ valid net for upstream VIF.
+ The source address 178.49.131.35 for group 239.1.1.2, is not in any
+ valid net for upstream VIF.
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ The source address 178.49.131.35 for group 239.1.1.2, is not in any
+ valid net for upstream VIF.
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ The source address 178.49.131.35 for group 239.1.1.2, is not in any
+ valid net for upstream VIF.
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ The source address 178.49.131.35 for group 239.1.1.2, is not in any
+ valid net for upstream VIF.
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ The source address 178.49.131.52 for group 239.1.1.3, is not in any
+ valid net for upstream VIF.
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ The source address 178.49.131.35 for group 239.1.1.2, is not in any
+ valid net for upstream VIF.
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ The source address 178.49.131.52 for group 239.1.1.3, is not in any
+ valid net for upstream VIF.
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ The source address 178.49.131.35 for group 239.1.1.2, is not in any
+ valid net for upstream VIF.
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    <div>
+
+ The source address 178.49.131.52 for group 239.1.1.3, is not in any
+ valid net for upstream VIF.
+
+ .. raw:: html
+
+    </div>
+
+ .. raw:: html
+
+    </div><div><div><p>Тогда в файле&nbsp;/usr/local/etc/igmpproxy.conf дописываем появившийся ip
+адрес:&nbsp;altnet 239.0.0.0/8 ко всем прочим&nbsp;altnet-ам</p>
+</div></div>
+
+
+<div class="sharing">
+</div>
+<hr>
+		
+	</section>
+	<div class="clearfix"></div>
+
+</article>
+
+	</div>
+
+	<!-- Sidebar -->
+	<div class="four columns">
+
+		
+	</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Content Wrapper / End -->
+
+
+		<div id="footer-bottom">
+			<!-- Container -->
+			<div class="container">
+				<div class="eight columns">Blog powered by <a href="http://getpelican.com">Pelican</a></div>
+					<div class="eight columns">
+						<ul class="social-icons-footer">
+								<li>
+									<a href="#" class="tooltip top" title="You can add links in your config file">
+										<i class="icon-you can add links in your config file"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltip top" title="Another social link">
+										<i class="icon-another social link"></i>
+									</a>
+								</li>
+							<li><a href="/None" class="tooltip top" title="RSS"><i class="icon-rss"></i></a></li>
+						</ul>
+					</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Footer Bottom / End -->
+		
+	<!-- Javascripts -->
+	<script src="/theme/js/jquery.min.js"></script>
+	</body>
+</html>

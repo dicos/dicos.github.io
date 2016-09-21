@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+	<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Косолапов Дмитрий">
+
+
+        <title>Косолапов Дмитрий: мысли умные и не только. - Как сделать свою википедию</title>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/theme/css/style.css">
+
+        <!-- Custom CSS -->
+        	<link rel="stylesheet" href="/theme/css/colors/blue.css" id="colors">
+
+        <!-- Code highlight color scheme -->
+            <link href="/theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="Косолапов Дмитрий: мысли умные и не только.">
+
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="">
+	<meta property="og:url" content="/ones-own-wikipedia.html">
+	<meta property="og:title" content="Как сделать свою википедию">
+	<meta property="og:description" content="">
+	   <meta property="og:image" content="/images/guilherme-toti.jpg">
+	<meta property="article:published_time" content="2011-03-13 12:39:00+06:00">
+	</head>
+	<body>
+		<header id="header">
+			<!-- Container -->
+			<div class="container">
+				<!-- Logo / Mobile Menu -->
+				<div class="nine.columns columns">
+					<div id="logo">
+						<h1><a href="/">Косолапов Дмитрий: мысли умные и не только.</a></h1>
+					</div>
+				</div>
+				<!-- Navigation
+				================================================== -->
+				<div class="seven columns">
+					
+					<nav id="navigation" class="menu">
+						<ul id="responsive">
+
+							<li><a href="/">Главная</a></li>
+
+
+							        <li><a href="/about.html">Обо мне</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Container / End -->
+		</header>
+		<!-- Header / End -->
+		
+		<div id="content-wrapper">
+			<section id="titlebar">
+				<!-- Container -->
+				<div class="container">
+					<div class="sixteen columns">						
+						<nav id="breadcrumbs">
+							<ul>
+								<li>Текущее нахождение:</li>
+								<li><a href="/">Главная</a></li>
+<li><a href="/category/php.html">php</a></li>
+<li>Как сделать свою википедию</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+				<!-- Container / End -->
+			</section>
+
+			<div class="container">
+	<div class="twelve alt columns">
+<article class="post" style="margin: 0; border: 0;">
+	
+	<div class="post-format">
+		<div class="circle"><i class="icon-pencil"></i><span></span></div>
+	</div>
+
+	<section class="post-content">
+
+		<header class="meta">
+			<h2><a href="/ones-own-wikipedia.html">Как сделать свою википедию</a></h2>
+			<ul>
+				<li>By <a href="/author/admin.html">admin</a></li>
+				<li>Вс 13 Март 2011</li>
+			</ul>
+		</header>
+
+		<p>Моим недавним заказом было создание сайта на основе движка
+<a class="reference external" href="http://www.mediawiki.org/">mediawiki</a>. Какие задачи стояли:</p>
+<ul class="simple">
+<li>вставлять description, keywords в страницу;</li>
+<li>помещать ролики youtube на страницу;</li>
+<li>изменять title страниц;</li>
+<li>создать несколько шаблонов страниц;</li>
+<li>размещать карту яндекса в любом месте.</li>
+</ul>
+<p>Программировать, кроме последнего ни чего не надо было, обошелся
+готовыми модулями:</p>
+<p>Для keywords есть готовое расширение
+<a class="reference external" href="http://www.mediawiki.org/wiki/Extension:MetaKeywordsTag">MetaKeywordsTag</a>.&nbsp;С
+тегом description все оказалось сложнее из-за того, что многие
+расширения либо не работали, либо работали не так как надо (этот тег
+оказывался внутри тега body а не head). Решение оказалось самое простое:
+открыть MetaKeywordsTag.php, заменить внутри него слова keywords на
+description. Вот готовый
+<a class="reference external" href="http://dicos.ru/wp-content/uploads/2011/03/MetaDescriptionTag.php_.tar">результат</a>.</p>
+<p>Чтобы вставлять видео с ютуба, нужно установить
+модуль&nbsp;<a class="reference external" href="http://www.mediawiki.org/wiki/Extension:EmbedVideo">EmbedVideo</a></p>
+<p>Расширения, нужное для вставки title, в текущей стабильной версии нет
+(1.16), для следующей версии есть. Рекомендовать ни чего не буду, так
+как с выходом релиза все может сломаться.</p>
+<p>Чтобы сделать более-менее интеллектуальные шаблоны (например карточки)
+нужно установить
+расширение&nbsp;<a class="reference external" href="http://www.mediawiki.org/wiki/ParserFunctions">ParserFunctions</a>.
+Пример карточки можно увидеть на странице с описанием
+<a class="reference external" href="http://ru.wikipedia.org/wiki/%D0%90%D0%9A-47">АК-47</a>, она находится
+справа.</p>
+<p>Подробнее хотел бы остановиться на яндекс картах. Для начала <a class="reference external" href="http://dicos.ru/wp-content/uploads/2011/03/YandexMap.php_.tar">скачайте
+файл</a>
+и распакуйте его в каталог extensions. Потом откройте файл
+LocalSettings.php и добавьте такие строки:</p>
+<blockquote>
+<div class="line-block">
+<div class="line">$wgYandexMapsKey = 'API-ключ';</div>
+<div class="line">require_once( '$IP/extensions/YandexMap.php' );</div>
+</div>
+</blockquote>
+<p>Если кто не знает, ключ можно получить только зарегистрировавшись на
+яндексе на этой странице&nbsp;<a class="reference external" href="http://api.yandex.ru/maps/keyslist.xml">http://api.yandex.ru/maps/keyslist.xml</a></p>
+
+
+
+<div class="sharing">
+</div>
+<hr>
+		
+	</section>
+	<div class="clearfix"></div>
+
+</article>
+
+	</div>
+
+	<!-- Sidebar -->
+	<div class="four columns">
+
+		
+	</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Content Wrapper / End -->
+
+
+		<div id="footer-bottom">
+			<!-- Container -->
+			<div class="container">
+				<div class="eight columns">Blog powered by <a href="http://getpelican.com">Pelican</a></div>
+					<div class="eight columns">
+						<ul class="social-icons-footer">
+								<li>
+									<a href="#" class="tooltip top" title="You can add links in your config file">
+										<i class="icon-you can add links in your config file"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltip top" title="Another social link">
+										<i class="icon-another social link"></i>
+									</a>
+								</li>
+							<li><a href="/None" class="tooltip top" title="RSS"><i class="icon-rss"></i></a></li>
+						</ul>
+					</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Footer Bottom / End -->
+		
+	<!-- Javascripts -->
+	<script src="/theme/js/jquery.min.js"></script>
+	</body>
+</html>

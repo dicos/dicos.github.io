@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+	<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Косолапов Дмитрий">
+
+
+        <title>Косолапов Дмитрий: мысли умные и не только. - Админка джанги как интерфейс к БД 1</title>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/theme/css/style.css">
+
+        <!-- Custom CSS -->
+        	<link rel="stylesheet" href="/theme/css/colors/blue.css" id="colors">
+
+        <!-- Code highlight color scheme -->
+            <link href="/theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="Косолапов Дмитрий: мысли умные и не только.">
+
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="">
+	<meta property="og:url" content="/django-admin-db-1.html">
+	<meta property="og:title" content="Админка джанги как интерфейс к БД 1">
+	<meta property="og:description" content="">
+	   <meta property="og:image" content="/images/guilherme-toti.jpg">
+	<meta property="article:published_time" content="2010-04-18 11:08:00+07:00">
+	</head>
+	<body>
+		<header id="header">
+			<!-- Container -->
+			<div class="container">
+				<!-- Logo / Mobile Menu -->
+				<div class="nine.columns columns">
+					<div id="logo">
+						<h1><a href="/">Косолапов Дмитрий: мысли умные и не только.</a></h1>
+					</div>
+				</div>
+				<!-- Navigation
+				================================================== -->
+				<div class="seven columns">
+					
+					<nav id="navigation" class="menu">
+						<ul id="responsive">
+
+							<li><a href="/">Главная</a></li>
+
+
+							        <li><a href="/about.html">Обо мне</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Container / End -->
+		</header>
+		<!-- Header / End -->
+		
+		<div id="content-wrapper">
+			<section id="titlebar">
+				<!-- Container -->
+				<div class="container">
+					<div class="sixteen columns">						
+						<nav id="breadcrumbs">
+							<ul>
+								<li>Текущее нахождение:</li>
+								<li><a href="/">Главная</a></li>
+<li><a href="/category/bazy-dannykh.html">базы данных</a></li>
+<li>Админка джанги как интерфейс к БД 1</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+				<!-- Container / End -->
+			</section>
+
+			<div class="container">
+	<div class="twelve alt columns">
+<article class="post" style="margin: 0; border: 0;">
+	
+	<div class="post-format">
+		<div class="circle"><i class="icon-pencil"></i><span></span></div>
+	</div>
+
+	<section class="post-content">
+
+		<header class="meta">
+			<h2><a href="/django-admin-db-1.html">Админка джанги как интерфейс к БД 1</a></h2>
+			<ul>
+				<li>By <a href="/author/admin.html">admin</a></li>
+				<li>Вс 18 Апрель 2010</li>
+			</ul>
+		</header>
+
+		<p>Понадобилось создать базу данных квартир и независимую от операционной
+системы визуальный интерфейс. В организации используются как windows
+(использовался) так и linux. База данных должна обеспечить работу
+нескольких операторов одновременно. Поэтому, СУБД должна быть
+какая-нибудь серверная. Выбор упал на MySQL и PostgreSQL, так как
+непонятно какая ОС будет использоваться на сервере.</p>
+<p>Создать визуальный интерфейс можно следующими набором программ:</p>
+<ol class="arabic simple">
+<li>Microsoft Office;</li>
+<li>Open Office;</li>
+<li>написать, используя средства Adobe Air, Flash и т.д.</li>
+<li>Формировать интерфейс средствами HTML, т.е. заполнять базу данных
+операторы будут через браузер.</li>
+</ol>
+<p>Связка из продуктов фирмы Microsoft отпадает сразу, так как в том
+отделе, где она нужна часть компьютеров работают на линуксе (люблю себе
+усложнять жизнь).</p>
+<p>Open Office более кроссплатформенный (работает везде, где есть java).
+Есть возможность работы как в монопольном режиме, так и в
+многопользовательском. Поддерживает системы управления базами данных,
+для которых написаны драйвера ODBC или JDBC. У JDBC преимущество перед
+ODBC только в том, что можно изменять структуру таблиц и базы данных
+прямо в Open Ofiice.&nbsp; Я не смог сделать корректно работающий интерфейс
+для добавления фотографий в базу данных, пришлось от этой идеи
+отказаться. К слову сказать, Microsoft Office прекрасно справился со
+своими обязанностями.</p>
+<p>С Adobe Air, Flash я ни разу не работал, и много времени убил бы на их
+изучение.</p>
+<p>Под четвертым пунктом я имел следующее: будет сайт, в котором будет
+вестись база данных, то есть что-то в виде интернет-каталогов.
+Реализовать планировал при помощи пхп фреймворка Symphony или
+питоновского фреймворка django. Оба фреймворка позволяют отойти от&nbsp; SQL
+запросов в базу данных при помощи своих ORM. Питон мне стал нравиться
+больше, поэтому от Symphony я отказался.</p>
+
+
+
+<div class="sharing">
+</div>
+<hr>
+		
+	</section>
+	<div class="clearfix"></div>
+
+</article>
+
+	</div>
+
+	<!-- Sidebar -->
+	<div class="four columns">
+
+		
+	</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Content Wrapper / End -->
+
+
+		<div id="footer-bottom">
+			<!-- Container -->
+			<div class="container">
+				<div class="eight columns">Blog powered by <a href="http://getpelican.com">Pelican</a></div>
+					<div class="eight columns">
+						<ul class="social-icons-footer">
+								<li>
+									<a href="#" class="tooltip top" title="You can add links in your config file">
+										<i class="icon-you can add links in your config file"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltip top" title="Another social link">
+										<i class="icon-another social link"></i>
+									</a>
+								</li>
+							<li><a href="/None" class="tooltip top" title="RSS"><i class="icon-rss"></i></a></li>
+						</ul>
+					</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Footer Bottom / End -->
+		
+	<!-- Javascripts -->
+	<script src="/theme/js/jquery.min.js"></script>
+	</body>
+</html>

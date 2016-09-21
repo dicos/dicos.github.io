@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+	<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Косолапов Дмитрий">
+
+
+        <title>Косолапов Дмитрий: мысли умные и не только. - Ошибка в django-gis</title>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/theme/css/style.css">
+
+        <!-- Custom CSS -->
+        	<link rel="stylesheet" href="/theme/css/colors/blue.css" id="colors">
+
+        <!-- Code highlight color scheme -->
+            <link href="/theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="Косолапов Дмитрий: мысли умные и не только.">
+
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="">
+	<meta property="og:url" content="/cannot-import-namegqn.html">
+	<meta property="og:title" content="Ошибка в django-gis">
+	<meta property="og:description" content="">
+	   <meta property="og:image" content="/images/guilherme-toti.jpg">
+	<meta property="article:published_time" content="2010-07-19 15:51:00+07:00">
+	</head>
+	<body>
+		<header id="header">
+			<!-- Container -->
+			<div class="container">
+				<!-- Logo / Mobile Menu -->
+				<div class="nine.columns columns">
+					<div id="logo">
+						<h1><a href="/">Косолапов Дмитрий: мысли умные и не только.</a></h1>
+					</div>
+				</div>
+				<!-- Navigation
+				================================================== -->
+				<div class="seven columns">
+					
+					<nav id="navigation" class="menu">
+						<ul id="responsive">
+
+							<li><a href="/">Главная</a></li>
+
+
+							        <li><a href="/about.html">Обо мне</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Container / End -->
+		</header>
+		<!-- Header / End -->
+		
+		<div id="content-wrapper">
+			<section id="titlebar">
+				<!-- Container -->
+				<div class="container">
+					<div class="sixteen columns">						
+						<nav id="breadcrumbs">
+							<ul>
+								<li>Текущее нахождение:</li>
+								<li><a href="/">Главная</a></li>
+<li><a href="/category/python.html">python</a></li>
+<li>Ошибка в django-gis</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+				<!-- Container / End -->
+			</section>
+
+			<div class="container">
+	<div class="twelve alt columns">
+<article class="post" style="margin: 0; border: 0;">
+	
+	<div class="post-format">
+		<div class="circle"><i class="icon-pencil"></i><span></span></div>
+	</div>
+
+	<section class="post-content">
+
+		<header class="meta">
+			<h2><a href="/cannot-import-namegqn.html">Ошибка в django-gis</a></h2>
+			<ul>
+				<li>By <a href="/author/admin.html">admin</a></li>
+				<li>Пн 19 Июль 2010</li>
+			</ul>
+		</header>
+
+		<p>После перезагрузки рабочего компьютера с windows server 2003 меня
+порадовала джанга такой ошибкой:</p>
+<blockquote>
+<div class="line-block">
+<div class="line">F:\web\realtor\mailTooDatabaseBot&gt;retrieveMail.py</div>
+<div class="line">C:\Python26\lib\site-packages\django\contrib\gis\db\backend\__init__.py:6:</div>
+<div class="line">UserWarning: The `django.contrib.gis.db.backend` module was
+refactored and&nbsp; to `django.contrib.gis.db.backends` in 1.2.&nbsp; All
+functionality of `SpatialBackend` has been moved to the `ops`
+attribute of the spatial database backend.&nbsp; A `SpatialBackend`
+alias is provided here for backwards-compatibility, but will be
+removed in 1.3.</div>
+<div class="line">warn('The `django.contrib.gis.db.backend` module was refactored
+and '</div>
+<div class="line">Traceback (most recent call last):</div>
+<div class="line">File &quot;F:\web\realtor\mailTooDatabaseBot\retrieveMail.py&quot;, line
+23, in &lt;module&gt;</div>
+<div class="line">from arenda.models import Area, Street, Apartment, Matherial</div>
+<div class="line">File &quot;F:\web\****\models.py&quot;, line 7, in &lt;module&gt;</div>
+<div class="line">from django.contrib.gis.db import models</div>
+<div class="line">File
+&quot;C:\Python26\lib\site-packages\django\contrib\gis\db\models\__init__.py&quot;,
+line 5, in &lt;module&gt;</div>
+<div class="line">from django.contrib.gis.db.models.aggregates import *</div>
+<div class="line">File
+&quot;C:\Python26\lib\site-packages\django\contrib\gis\db\models\aggregates.py&quot;,
+line 2, in &lt;module&gt;</div>
+<div class="line">from django.contrib.gis.db.models.sql import GeomField</div>
+<div class="line">File
+&quot;C:\Python26\lib\site-packages\django\contrib\gis\db\models\sql\__init__.py&quot;,
+line 2, in &lt;module&gt;</div>
+<div class="line">from django.contrib.gis.db.models.sql.query import GeoQuery</div>
+<div class="line">File
+&quot;C:\Python26\lib\site-packages\django\contrib\gis\db\models\sql\query.py&quot;,
+line 4, in &lt;module&gt;</div>
+<div class="line">from django.contrib.gis.db.models.fields import GeometryField</div>
+<div class="line">File
+&quot;C:\Python26\lib\site-packages\django\contrib\gis\db\models\fields\__init__.py&quot;,
+line 3, in &lt;module&gt;</div>
+<div class="line">from django.contrib.gis.db.backend import SpatialBackend, gqn</div>
+<div class="line">ImportError: cannot import name gqn</div>
+</div>
+</blockquote>
+<p>Из-за чего это происходит: в файле
+django\contrib\gis\db\models\sql\query.py происходит импорт из
+модуля fields класс GeometryField. Грубо говоря, под модулем можно
+понимать файл, находящийся в этом же каталоге, так и пакет --
+подкаталог, в котором есть файл __init__.py. Что у нас происходило:
+в каталоге django/contrib/gis/db/models у нас есть файл fields.py и
+каталог fields. Видимо, приоритет при импорте выше у пакетов, чем у
+файлов, поэтому загружался ненужный нам (как оказалось устаревший)
+пакет.</p>
+<p>Решилось очень просто: так как каталог fields был оставлен только для
+совместимости с предыдущими версиями, то его переименовал на
+fields__temp, ибо вдруг еще пригодится.</p>
+<p>UPD: не у одного у меня такая же возникала проблема, решение проблемы
+такое же
+<a class="reference external" href="http://groups.google.com/group/geodjango/browse_thread/thread/88fc94ed57ab153d">http://groups.google.com/group/geodjango/browse_thread/thread/88fc94ed57ab153d</a></p>
+
+
+
+<div class="sharing">
+</div>
+<hr>
+		
+	</section>
+	<div class="clearfix"></div>
+
+</article>
+
+	</div>
+
+	<!-- Sidebar -->
+	<div class="four columns">
+
+		
+	</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Content Wrapper / End -->
+
+
+		<div id="footer-bottom">
+			<!-- Container -->
+			<div class="container">
+				<div class="eight columns">Blog powered by <a href="http://getpelican.com">Pelican</a></div>
+					<div class="eight columns">
+						<ul class="social-icons-footer">
+								<li>
+									<a href="#" class="tooltip top" title="You can add links in your config file">
+										<i class="icon-you can add links in your config file"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltip top" title="Another social link">
+										<i class="icon-another social link"></i>
+									</a>
+								</li>
+							<li><a href="/None" class="tooltip top" title="RSS"><i class="icon-rss"></i></a></li>
+						</ul>
+					</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Footer Bottom / End -->
+		
+	<!-- Javascripts -->
+	<script src="/theme/js/jquery.min.js"></script>
+	</body>
+</html>

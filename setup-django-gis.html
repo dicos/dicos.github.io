@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+	<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Косолапов Дмитрий">
+
+
+        <title>Косолапов Дмитрий: мысли умные и не только. - Установка django-gis</title>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/theme/css/style.css">
+
+        <!-- Custom CSS -->
+        	<link rel="stylesheet" href="/theme/css/colors/blue.css" id="colors">
+
+        <!-- Code highlight color scheme -->
+            <link href="/theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="Косолапов Дмитрий: мысли умные и не только.">
+
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="">
+	<meta property="og:url" content="/setup-django-gis.html">
+	<meta property="og:title" content="Установка django-gis">
+	<meta property="og:description" content="">
+	   <meta property="og:image" content="/images/guilherme-toti.jpg">
+	<meta property="article:published_time" content="2010-07-07 09:12:00+07:00">
+	</head>
+	<body>
+		<header id="header">
+			<!-- Container -->
+			<div class="container">
+				<!-- Logo / Mobile Menu -->
+				<div class="nine.columns columns">
+					<div id="logo">
+						<h1><a href="/">Косолапов Дмитрий: мысли умные и не только.</a></h1>
+					</div>
+				</div>
+				<!-- Navigation
+				================================================== -->
+				<div class="seven columns">
+					
+					<nav id="navigation" class="menu">
+						<ul id="responsive">
+
+							<li><a href="/">Главная</a></li>
+
+
+							        <li><a href="/about.html">Обо мне</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Container / End -->
+		</header>
+		<!-- Header / End -->
+		
+		<div id="content-wrapper">
+			<section id="titlebar">
+				<!-- Container -->
+				<div class="container">
+					<div class="sixteen columns">						
+						<nav id="breadcrumbs">
+							<ul>
+								<li>Текущее нахождение:</li>
+								<li><a href="/">Главная</a></li>
+<li><a href="/category/bazy-dannykh.html">базы данных</a></li>
+<li>Установка django-gis</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+				<!-- Container / End -->
+			</section>
+
+			<div class="container">
+	<div class="twelve alt columns">
+<article class="post" style="margin: 0; border: 0;">
+	
+	<div class="post-format">
+		<div class="circle"><i class="icon-pencil"></i><span></span></div>
+	</div>
+
+	<section class="post-content">
+
+		<header class="meta">
+			<h2><a href="/setup-django-gis.html">Установка django-gis</a></h2>
+			<ul>
+				<li>By <a href="/author/admin.html">admin</a></li>
+				<li>Ср 07 Июль 2010</li>
+			</ul>
+		</header>
+
+		<p>Я постараюсь описать установку geo django так как я делал у себя на
+машинах с установленными операционными системами линукс (убунту), так и
+виндовс (сервер 2003). В качестве СУБД выбрал postgres</p>
+<p>Установка на убунту 10.04: Итак, для начала нам надо установить все
+необходимые компоненты командой</p>
+<blockquote>
+apt-get install binutils libgdal1-1.6.0&nbsp; postgresql-8.4-postgis
+postgresql-server-dev-8.4
+``libgeoip1 gdal-bin python-gdal ``libgeos-c1
+libgeos-dev`` proj ``binutils bzip2 gcc g++ flex make
+python-ctypes xml2-config libxml2-dev python-libxml2 xml2</blockquote>
+<p>Тут я перечислил версии пакетов которые поддерживаются моим домашним
+компьютером (ubuntu 10.04). Если стоит более новая система, то лучше
+всего устанавливать новые версии пакетов. Версии пакетов определяют
+цифры в названиях пакетов. Чтобы узнать список пакетов, достаточно
+выполнить команду &quot;aptitude search неполное_название_пакета&quot;, например
+найдем пакеты, содержащие название &quot;libgeos&quot;:</p>
+<blockquote>
+<div class="line-block">
+<div class="line">aptitude search libgeos</div>
+<div class="line">i ibgeos-3.1.0 - Geometry engine for Geographic Information
+Systems - C++ Library</div>
+<div class="line">i libgeos-c1 - Geometry engine for Geographic Information Systems
+- C Library</div>
+<div class="line">p libgeos-dev - Geometry engine for GIS - Development files</div>
+<div class="line">p libgeos-doc - Documentation for the GEOS GIS geometry engine
+library</div>
+<div class="line">p libgeosruby1.8 - GEOS bindings for Ruby</div>
+</div>
+</blockquote>
+<p>После того как успешно установили все эти пакеты, приступим к созданию
+шаблона пространственных баз данных. Я не стал заморачиваться установкой
+вручную, как это описано на странице оф. документации, а взял готовый
+скрипт с этой же страницы. К сожалению, скрипт не заработал. Проблема
+была в том, что в указанном пути отсутствовали файлы для установки
+пространственной базы данных. Воспользовавшись поиском в mc нужно найти
+каталог, в котором содержится файл spatial_ref_sys.sql. Этот каталог и
+нужно было подставить в переменную POSTGIS_SQL_PATH. Для начала можно
+попробовать запустить sh скрипты, которые представлены в оф.
+документации. Если эти скрипты не заработают, представляю свою <a class="reference external" href="http://dicos.ru/wp-content/uploads/2010/06/create_template_postgis.sh.tar">версию
+установщика базы
+даннх</a>.
+Внутри архива 2 скрипта с версиями 1.3 и 1.4 первый предназначен для
+постгреса версии 8.3 а второй для версии 8.4.</p>
+<p>Эти скрипты нужно выполнять от имени пользователя postgres. Сейчас я
+покажу на примере установки на постгрес версии 8.3:</p>
+<blockquote>
+<div class="line-block">
+<div class="line"><a class="reference external" href="mailto:root&#64;server">root&#64;server</a>: su postgres</div>
+<div class="line"><a class="reference external" href="mailto:postgres&#64;server">postgres&#64;server</a>: sh create_template_postgis-1.3.sh</div>
+</div>
+</blockquote>
+<p>Если все выполнено верно, то последние слова будут такие:</p>
+<blockquote>
+<div class="line-block">
+<div class="line">COMMIT</div>
+<div class="line">VACUUM</div>
+<div class="line">GRANT</div>
+<div class="line">GRANT</div>
+</div>
+</blockquote>
+<p>Но если заканчивается словами «ERROR: relation &quot;spatial_ref_sys&quot; does
+not exist» то, перед тем, как запустить другой скрипт нужно будет
+удалить уже созданную базу данных. Я сделал это так: запустил
+pgAdminIII, залез в базу данных postgres, потом в &quot;каталоги&quot;, там выбрал
+каталог PostgreSQL, далее перешел в &quot;таблицы&quot;, нажал правой кнопкой мыши
+на таблицу pg_database, в раскрывшемся списке выбрал пункт показать
+&quot;все строки&quot;. Значение ячейки, находящуюся в столбце datistemplate и
+строке template_postgis изменил на False.</p>
+<p><a class="reference external" href="http://dicos.ru/wp-content/uploads/2010/06/drop_template_database_1.png"><img alt="image0" class="alignnone size-medium wp-image-125" src="http://dicos.ru/wp-content/uploads/2010/06/drop_template_database_1-273x300.png" style="width: 273px; height: 300px;" /></a><a class="reference external" href="http://dicos.ru/wp-content/uploads/2010/06/drop_template_database_2.png"><img alt="image1" class="alignnone size-medium wp-image-126" src="http://dicos.ru/wp-content/uploads/2010/06/drop_template_database_2-300x94.png" style="width: 300px; height: 94px;" /></a></p>
+<p>Установить также просто на убунту 8.04 у меня не получилось. Дело в том,
+что там лежат уже старые версии библиотек, а django-gis требует более
+новые. Поэтому нужно все собирать вручную. Все не так страшно как
+кажется: в документации написаны
+<a class="reference external" href="http://docs.djangoproject.com/en/1.2/ref/contrib/gis/install/#geos">команды</a>,
+которые просто нужно последовательно вводить в консоль.</p>
+<p>Установка под виндовс такая: устанавливаем постгрес 8.4, далее качаем
+psycopg2 -- это связующее звено между постгресом и питоном. Затем
+устанавливаем <a class="reference external" href="http://geodjango.org/windows/GeoDjango_Installer.exe">GeoDjango
+Installer</a>.
+После того, как установили, проверяем переменные среды: для этого
+щелкаем правой кнопкой на «мой компьютер», далее переходим на вкладку
+«дополнительно». Нажимаем на кнопку «переменные среды», и правим пути в
+которых есть слово postgres. В этих путях нужно заменить 8.3 на 8.4
+Иначе выпрыгнет ошибка «django.core.exceptions.ImproperlyConfigured:
+Could not import user-defined GEOMETRY_BACKEND &quot;geos&quot;». То есть нам
+надо заменить:</p>
+<p>C:\Program Files\PostgreSQL\8.3\bin; на C:\Program
+Files\PostgreSQL\8.4\bin</p>
+<div class="line-block">
+<div class="line">То есть:</div>
+<div class="line"><a class="reference external" href="http://dicos.ru/wp-content/uploads/2010/07/temporary_variable.gif"><img alt="переменные среды" class="alignnone size-medium wp-image-136" src="http://dicos.ru/wp-content/uploads/2010/07/temporary_variable-300x286.gif" style="width: 300px; height: 286px;" /></a></div>
+</div>
+<p>После всех этих махинаций у нас все должно работать. Если что не
+понятно, пишите на почту.</p>
+<div class="line-block">
+<div class="line">документация по установке geodjango (англ.) --
+<a class="reference external" href="http://docs.djangoproject.com/en/1.2/ref/contrib/gis/install/">http://docs.djangoproject.com/en/1.2/ref/contrib/gis/install/</a></div>
+<div class="line">оф. сайт psycopg2 --
+<a class="reference external" href="http://www.stickpeople.com/projects/python/win-psycopg/">http://www.stickpeople.com/projects/python/win-psycopg/</a></div>
+</div>
+<div id="_mcePaste"
+style="position: absolute; left: -10000px; top: 627px; width: 1px; height: 1px; overflow-x: hidden; overflow-y: hidden; text-align: left;"><p><a class="reference external" href="http://www.google.com/search?hl=ru&amp;pwst=1&amp;&amp;sa=X&amp;ei=t88gTIucFIq6ONPN0Gs&amp;ved=0CBUQvwUoAQ&amp;q=ERROR%3A+relation+%22spatial_ref_sys%22+does+not+exist&amp;spell=1">ERROR: relation &quot;spatial_ref_sys&quot; does not
+***exist***</a>.</p>
+</div>
+
+
+<div class="sharing">
+</div>
+<hr>
+		
+	</section>
+	<div class="clearfix"></div>
+
+</article>
+
+	</div>
+
+	<!-- Sidebar -->
+	<div class="four columns">
+
+		
+	</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Content Wrapper / End -->
+
+
+		<div id="footer-bottom">
+			<!-- Container -->
+			<div class="container">
+				<div class="eight columns">Blog powered by <a href="http://getpelican.com">Pelican</a></div>
+					<div class="eight columns">
+						<ul class="social-icons-footer">
+								<li>
+									<a href="#" class="tooltip top" title="You can add links in your config file">
+										<i class="icon-you can add links in your config file"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltip top" title="Another social link">
+										<i class="icon-another social link"></i>
+									</a>
+								</li>
+							<li><a href="/None" class="tooltip top" title="RSS"><i class="icon-rss"></i></a></li>
+						</ul>
+					</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Footer Bottom / End -->
+		
+	<!-- Javascripts -->
+	<script src="/theme/js/jquery.min.js"></script>
+	</body>
+</html>

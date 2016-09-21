@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+	<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Косолапов Дмитрий">
+
+
+        <title>Косолапов Дмитрий: мысли умные и не только. - Субдомены в django</title>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/theme/css/style.css">
+
+        <!-- Custom CSS -->
+        	<link rel="stylesheet" href="/theme/css/colors/blue.css" id="colors">
+
+        <!-- Code highlight color scheme -->
+            <link href="/theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="Косолапов Дмитрий: мысли умные и не только.">
+
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="">
+	<meta property="og:url" content="/subdomains-in-django.html">
+	<meta property="og:title" content="Субдомены в django">
+	<meta property="og:description" content="">
+	   <meta property="og:image" content="/images/guilherme-toti.jpg">
+	<meta property="article:published_time" content="2011-06-16 16:33:00+07:00">
+	</head>
+	<body>
+		<header id="header">
+			<!-- Container -->
+			<div class="container">
+				<!-- Logo / Mobile Menu -->
+				<div class="nine.columns columns">
+					<div id="logo">
+						<h1><a href="/">Косолапов Дмитрий: мысли умные и не только.</a></h1>
+					</div>
+				</div>
+				<!-- Navigation
+				================================================== -->
+				<div class="seven columns">
+					
+					<nav id="navigation" class="menu">
+						<ul id="responsive">
+
+							<li><a href="/">Главная</a></li>
+
+
+							        <li><a href="/about.html">Обо мне</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Container / End -->
+		</header>
+		<!-- Header / End -->
+		
+		<div id="content-wrapper">
+			<section id="titlebar">
+				<!-- Container -->
+				<div class="container">
+					<div class="sixteen columns">						
+						<nav id="breadcrumbs">
+							<ul>
+								<li>Текущее нахождение:</li>
+								<li><a href="/">Главная</a></li>
+<li><a href="/category/django.html">django</a></li>
+<li>Субдомены в django</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+				<!-- Container / End -->
+			</section>
+
+			<div class="container">
+	<div class="twelve alt columns">
+<article class="post" style="margin: 0; border: 0;">
+	
+	<div class="post-format">
+		<div class="circle"><i class="icon-pencil"></i><span></span></div>
+	</div>
+
+	<section class="post-content">
+
+		<header class="meta">
+			<h2><a href="/subdomains-in-django.html">Субдомены в django</a></h2>
+			<ul>
+				<li>By <a href="/author/admin.html">admin</a></li>
+				<li>Чт 16 Июнь 2011</li>
+			</ul>
+		</header>
+
+		<p>На сайте <a class="reference external" href="http://on-day.ry/">on-day.ru</a>, понадобилось реализовать
+такую штуку: каждый город должен находиться на своем субдомене.
+Полезность этого нововведения пусть оценивает СЕО специалист (привет,
+Евгений!), тут опишу техническую сторону вопроса.</p>
+<p>Какие требования:</p>
+<ol class="arabic simple">
+<li>должна сохраниться легкость управления сайтом;</li>
+<li>простота реализации;</li>
+<li>при дальнейшем развитии сайта не должно быть проблем, связанных с
+архитектурой.</li>
+</ol>
+<p>Какие варианты реализаций рассматривал:</p>
+<ol class="arabic simple">
+<li>создать субдомены для каждого города, и для субдомена поставить свой
+движок сайта;</li>
+<li>средствами веб-сервера преобразовывать запросы с subdomain.on-day.ru
+на on-day.ru/subdomain/</li>
+<li>джангу надо научить работать с субдоменами</li>
+</ol>
+<p>Достоинства/недостатки:</p>
+<p>У первого способа основной недостаток в том, что придется вручную
+создавать, редактировать и удалять субдомены. То есть научить
+контент-менеджера работать с панелью управления DNS сервера, настраивать
+виртуальные хосты на веб-сервере. Достоинство вижу только одно: большая
+гибкость сайта(-ов).</p>
+<p>Во втором способе мне не понравилась жесткая привязка к веб-серверу. То
+есть, сейчас использую веб-сервер апач. Если захочу заменить веб-сервер
+на nginx, придется разбираться с настройками преобразования URL-ов.</p>
+<p>Как понял дорогой мой читатель, я выбрал третий вариант реализации. Мне
+нужен готовый модуль с хорошей документацией, поддержкой шаблонных тегов
+и очень гибкий в настройке. Все, что&nbsp;перепробовал&nbsp;перечислять не буду, я
+остановился на модуле
+<a class="reference external" href="http://pypi.python.org/pypi/django-hosts/">django-hosts</a>.</p>
+<p>Как установить очень хорошо написано в документации. Сейчас я расскажу о
+его особенностях, вернее о том, что мне было не очевидно. Пусть у нас
+содержание файла hosts будет таким:</p>
+<blockquote>
+<pre class="literal-block">
+from django.conf import settings
+from django_hosts import patterns, host
+
+host_patterns = patterns('',
+    host(r'www', settings.ROOT_URLCONF, name='www'),
+    host(r'news', 'news.urls', name='news'),
+    host(r'(\w+)', 'user.urls', name='user'),
+)
+</pre>
+</blockquote>
+<p>а файл user/urls.py будет иметь вот такой код:</p>
+<blockquote>
+<pre class="literal-block">
+from django.conf.urls.defaults import patterns, url
+
+urlpatterns = patterns('user.views',
+url(r'^$', 'main_user', name='main_user'),
+url(r'^(?P&lt;slug&gt;[^/]+)/$', 'news', name='news'),
+)
+</pre>
+</blockquote>
+<p>Формат тега host_url такой: {% host_url название_url параметр1_вьюхи
+параметр2_вьюхи on название_хоста параметр_хоста1&nbsp; %} Для примера,
+нам нужно вывести ссылки на последние новостей всех пользователей.
+Переменную last_news содержит в себе информацию о последней новости и
+создателе этой новости. Код шаблона будет таким:</p>
+<blockquote>
+<p>{% load hosts %}</p>
+<div class="line-block">
+<div class="line">{% for news_item in last_news %}</div>
+<div class="line">&lt;a href=&quot;{% host_url news news_item.slug on user
+news.creator.name %}&quot;&gt;{{ news.name }}&lt;/a&gt;</div>
+<div class="line">{% endfor %}</div>
+</div>
+</blockquote>
+<p>При использовании с
+пакетом&nbsp;<a class="reference external" href="http://pypi.python.org/pypi/django-debug-toolbar/">django-debug-toolbar</a>
+модуль django-hosts вел себя некорректно: не всегда понять какой хост от
+него требуют. Исправить этот косяк можно только отключив мидлварь
+debug_toolbar.middleware.DebugToolbarMiddleware.&nbsp;Об этом поведении
+<a class="reference external" href="https://github.com/jezdez/django-hosts/issues/3">отписался</a> на своем
+недоанглийском разработчику. Если кто владеет английским гораздо лучше
+меня и объяснит автору что я имел ввиду, то буду очень признателен</p>
+
+
+
+<div class="sharing">
+</div>
+<hr>
+		
+	</section>
+	<div class="clearfix"></div>
+
+</article>
+
+	</div>
+
+	<!-- Sidebar -->
+	<div class="four columns">
+
+		
+	</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Content Wrapper / End -->
+
+
+		<div id="footer-bottom">
+			<!-- Container -->
+			<div class="container">
+				<div class="eight columns">Blog powered by <a href="http://getpelican.com">Pelican</a></div>
+					<div class="eight columns">
+						<ul class="social-icons-footer">
+								<li>
+									<a href="#" class="tooltip top" title="You can add links in your config file">
+										<i class="icon-you can add links in your config file"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltip top" title="Another social link">
+										<i class="icon-another social link"></i>
+									</a>
+								</li>
+							<li><a href="/None" class="tooltip top" title="RSS"><i class="icon-rss"></i></a></li>
+						</ul>
+					</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Footer Bottom / End -->
+		
+	<!-- Javascripts -->
+	<script src="/theme/js/jquery.min.js"></script>
+	</body>
+</html>

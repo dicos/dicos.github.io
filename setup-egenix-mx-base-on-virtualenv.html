@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+	<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Косолапов Дмитрий">
+
+
+        <title>Косолапов Дмитрий: мысли умные и не только. - Установка egenix-mx-base под virtualenv</title>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/theme/css/style.css">
+
+        <!-- Custom CSS -->
+        	<link rel="stylesheet" href="/theme/css/colors/blue.css" id="colors">
+
+        <!-- Code highlight color scheme -->
+            <link href="/theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="Косолапов Дмитрий: мысли умные и не только.">
+
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="">
+	<meta property="og:url" content="/setup-egenix-mx-base-on-virtualenv.html">
+	<meta property="og:title" content="Установка egenix-mx-base под virtualenv">
+	<meta property="og:description" content="">
+	   <meta property="og:image" content="/images/guilherme-toti.jpg">
+	<meta property="article:published_time" content="2011-06-22 14:28:00+07:00">
+	</head>
+	<body>
+		<header id="header">
+			<!-- Container -->
+			<div class="container">
+				<!-- Logo / Mobile Menu -->
+				<div class="nine.columns columns">
+					<div id="logo">
+						<h1><a href="/">Косолапов Дмитрий: мысли умные и не только.</a></h1>
+					</div>
+				</div>
+				<!-- Navigation
+				================================================== -->
+				<div class="seven columns">
+					
+					<nav id="navigation" class="menu">
+						<ul id="responsive">
+
+							<li><a href="/">Главная</a></li>
+
+
+							        <li><a href="/about.html">Обо мне</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Container / End -->
+		</header>
+		<!-- Header / End -->
+		
+		<div id="content-wrapper">
+			<section id="titlebar">
+				<!-- Container -->
+				<div class="container">
+					<div class="sixteen columns">						
+						<nav id="breadcrumbs">
+							<ul>
+								<li>Текущее нахождение:</li>
+								<li><a href="/">Главная</a></li>
+<li><a href="/category/python.html">python</a></li>
+<li>Установка egenix-mx-base под virtualenv</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+				<!-- Container / End -->
+			</section>
+
+			<div class="container">
+	<div class="twelve alt columns">
+<article class="post" style="margin: 0; border: 0;">
+	
+	<div class="post-format">
+		<div class="circle"><i class="icon-pencil"></i><span></span></div>
+	</div>
+
+	<section class="post-content">
+
+		<header class="meta">
+			<h2><a href="/setup-egenix-mx-base-on-virtualenv.html">Установка egenix-mx-base под virtualenv</a></h2>
+			<ul>
+				<li>By <a href="/author/admin.html">admin</a></li>
+				<li>Ср 22 Июнь 2011</li>
+			</ul>
+		</header>
+
+		<p>Несколько человек, в том числе и я столкнулись с проблемой, когда из-под
+виртуальной среды невозможно установить модуль&nbsp;egenix-mx-base.</p>
+<p>Установка через pip оканчивалась неудачей:</p>
+<blockquote>
+<div class="line-block">
+<div class="line">pip install egenix-mx-base</div>
+<div class="line">Downloading/unpacking egenix-mx-base</div>
+<div class="line">Downloading egenix-mx-base-3.2.0.tar.gz (4.6Mb): 4.6Mb downloaded</div>
+<div class="line">Running setup.py egg_info for package egenix-mx-base</div>
+<div class="line">Installing collected packages: egenix-mx-base</div>
+<div class="line">Running setup.py install for egenix-mx-base</div>
+<div class="line">error: None</div>
+<div class="line">Complete output from command /home/dmitry/web/openerp/bin/python
+-c &quot;import setuptools;
+__file__='/home/dmitry/web/openerp/build/egenix-mx-base/setup.py';
+execfile('/home/dmitry/web/openerp/build/egenix-mx-base/setup.py')&quot;
+install --single-version-externally-managed --record
+/tmp/pip-NueJAA-record/install-record.txt --install-headers
+/home/dmitry/web/openerp/include/site/python2.7:</div>
+<div class="line">running install</div>
+<div class="line">running build</div>
+<div class="line">running mx_autoconf</div>
+<div class="line">error: None</div>
+<div class="line">----------------------------------------</div>
+<div class="line">Command /home/dmitry/web/openerp/bin/python -c &quot;import setuptools;
+__file__='/home/dmitry/web/openerp/build/egenix-mx-base/setup.py';
+execfile('/home/dmitry/web/openerp/build/egenix-mx-base/setup.py')&quot;
+install --single-version-externally-managed --record
+/tmp/pip-NueJAA-record/install-record.txt --install-headers
+/home/dmitry/web/openerp/include/site/python2.7 failed with error
+code 1</div>
+<div class="line">Storing complete log in /home/dmitry/.pip/pip.log</div>
+</div>
+</blockquote>
+<p>Установка при помощи &nbsp;easy_install давала примерно похожий результат:</p>
+<blockquote>
+<div class="line-block">
+<div class="line">easy_install egenix-mx-base</div>
+<div class="line">Searching for egenix-mx-base</div>
+<div class="line">Reading <a class="reference external" href="http://pypi.python.org/simple/egenix-mx-base/">http://pypi.python.org/simple/egenix-mx-base/</a></div>
+<div class="line">Reading <a class="reference external" href="http://www.lemburg.com/python/mxExtensions.html">http://www.lemburg.com/python/mxExtensions.html</a></div>
+<div class="line">Reading <a class="reference external" href="http://www.egenix.com/products/python/mxBase/">http://www.egenix.com/products/python/mxBase/</a></div>
+<div class="line">Reading <a class="reference external" href="http://www.egenix.com/">http://www.egenix.com/</a></div>
+<div class="line">Best match: egenix-mx-base 3.2.0</div>
+<div class="line">Downloading
+<a class="reference external" href="http://downloads.egenix.com/python/egenix-mx-base-3.2.0.tar.gz">http://downloads.egenix.com/python/egenix-mx-base-3.2.0.tar.gz</a></div>
+<div class="line">Processing egenix-mx-base-3.2.0.tar.gz</div>
+<div class="line">Running egenix-mx-base-3.2.0/setup.py -q bdist_egg --dist-dir
+/tmp/easy_install-gyJnYN/egenix-mx-base-3.2.0/egg-dist-tmp-ZbsIvy</div>
+<div class="line">Warning: Can't read registry to find the necessary compiler
+setting</div>
+<div class="line">Make sure that Python modules _winreg, win32api or win32con are
+installed.</div>
+<div class="line">error: Setup script exited with error: None</div>
+</div>
+</blockquote>
+<p>Попытка сборки из исходников так же оканчивалась неудачей:</p>
+<blockquote>
+<div class="line-block">
+<div class="line">egenix-mx-base-3.2.0$ python setup.py install</div>
+<div class="line">running install</div>
+<div class="line">running build</div>
+<div class="line">running mx_autoconf</div>
+<div class="line">error: None</div>
+</div>
+</blockquote>
+<div class="section" id="id1">
+<h2>Решение:</h2>
+<p>Благо на сайте разработчика сказано о том, что можно установить наш
+модуль без C компилятора. Но для этого сперва надо знать в какой
+кодировке скомпилирован питон: UTF-16 (UCS-2) или UTF-32 (UCS-4). Узнать
+это можно так:</p>
+<blockquote>
+<div class="line-block">
+<div class="line">$ python #запускаем питон</div>
+<div class="line">&gt;&gt;&gt; import sys</div>
+<div class="line">&gt;&gt;&gt; print sys.maxunicode</div>
+</div>
+</blockquote>
+<p>Если число равно&nbsp;65535, то кодировка UTF-16 (UCS2), если&nbsp;4294967295, то
+UTF-32&nbsp;(UCS4).</p>
+<div class="line-block">
+<div class="line">Для UTF-16 строка установки будет такая:</div>
+<div class="line">easy_install -i <a class="reference external" href="http://downloads.egenix.com/python/index/ucs2/">http://downloads.egenix.com/python/index/ucs2/</a>
+egenix-mx-base</div>
+</div>
+<div class="line-block">
+<div class="line">А для UTF-32 строка установки будет выглядеть так:</div>
+<div class="line">easy_install -i <a class="reference external" href="http://downloads.egenix.com/python/index/ucs4/">http://downloads.egenix.com/python/index/ucs4/</a>
+egenix-mx-base</div>
+</div>
+<p>Сайт разработчика:&nbsp;<a class="reference external" href="http://www.egenix.com/products/python/mxBase/">http://www.egenix.com/products/python/mxBase/</a></p>
+</div>
+
+
+
+<div class="sharing">
+</div>
+<hr>
+		
+	</section>
+	<div class="clearfix"></div>
+
+</article>
+
+	</div>
+
+	<!-- Sidebar -->
+	<div class="four columns">
+
+		
+	</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Content Wrapper / End -->
+
+
+		<div id="footer-bottom">
+			<!-- Container -->
+			<div class="container">
+				<div class="eight columns">Blog powered by <a href="http://getpelican.com">Pelican</a></div>
+					<div class="eight columns">
+						<ul class="social-icons-footer">
+								<li>
+									<a href="#" class="tooltip top" title="You can add links in your config file">
+										<i class="icon-you can add links in your config file"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltip top" title="Another social link">
+										<i class="icon-another social link"></i>
+									</a>
+								</li>
+							<li><a href="/None" class="tooltip top" title="RSS"><i class="icon-rss"></i></a></li>
+						</ul>
+					</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Footer Bottom / End -->
+		
+	<!-- Javascripts -->
+	<script src="/theme/js/jquery.min.js"></script>
+	</body>
+</html>

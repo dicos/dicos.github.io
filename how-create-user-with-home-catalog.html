@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+	<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Косолапов Дмитрий">
+
+
+        <title>Косолапов Дмитрий: мысли умные и не только. - Создать пользователя с домашним каталогом</title>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/theme/css/style.css">
+
+        <!-- Custom CSS -->
+        	<link rel="stylesheet" href="/theme/css/colors/blue.css" id="colors">
+
+        <!-- Code highlight color scheme -->
+            <link href="/theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="Косолапов Дмитрий: мысли умные и не только.">
+
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="">
+	<meta property="og:url" content="/how-create-user-with-home-catalog.html">
+	<meta property="og:title" content="Создать пользователя с домашним каталогом">
+	<meta property="og:description" content="">
+	   <meta property="og:image" content="/images/guilherme-toti.jpg">
+	<meta property="article:published_time" content="2010-04-25 21:57:00+07:00">
+	</head>
+	<body>
+		<header id="header">
+			<!-- Container -->
+			<div class="container">
+				<!-- Logo / Mobile Menu -->
+				<div class="nine.columns columns">
+					<div id="logo">
+						<h1><a href="/">Косолапов Дмитрий: мысли умные и не только.</a></h1>
+					</div>
+				</div>
+				<!-- Navigation
+				================================================== -->
+				<div class="seven columns">
+					
+					<nav id="navigation" class="menu">
+						<ul id="responsive">
+
+							<li><a href="/">Главная</a></li>
+
+
+							        <li><a href="/about.html">Обо мне</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Container / End -->
+		</header>
+		<!-- Header / End -->
+		
+		<div id="content-wrapper">
+			<section id="titlebar">
+				<!-- Container -->
+				<div class="container">
+					<div class="sixteen columns">						
+						<nav id="breadcrumbs">
+							<ul>
+								<li>Текущее нахождение:</li>
+								<li><a href="/">Главная</a></li>
+<li><a href="/category/sisadminstvo.html">сисадминство</a></li>
+<li>Создать пользователя с домашним каталогом</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+				<!-- Container / End -->
+			</section>
+
+			<div class="container">
+	<div class="twelve alt columns">
+<article class="post" style="margin: 0; border: 0;">
+	
+	<div class="post-format">
+		<div class="circle"><i class="icon-pencil"></i><span></span></div>
+	</div>
+
+	<section class="post-content">
+
+		<header class="meta">
+			<h2><a href="/how-create-user-with-home-catalog.html">Создать пользователя с домашним каталогом</a></h2>
+			<ul>
+				<li>By <a href="/author/admin.html">admin</a></li>
+				<li>Вс 25 Апрель 2010</li>
+			</ul>
+		</header>
+
+		<p>useradd -m user_name</p>
+<p>Хорошая статья по управлению пользователями в линуксе на сайте
+<a class="reference external" href="http://stfw.ru/page.php?id=9945">STFW.RU</a></p>
+<p>Полный список опций взял с этого же сайта:</p>
+<div class="line-block">
+<div class="line">-с комментарий Описание учетной записи. Как правило, это всего лишь
+полное имя пользователя.</div>
+<div class="line">-d домашний каталог Домашний каталог пользователя. По умолчанию
+значение этого параметра совпадает с регистрационным именем
+пользователя. Как правило, домашний каталог пользователя размещается в
+каталоге /home.</div>
+<div class="line">-D Указывает на необходимость сохранения предоставленной информации в
+качестве новой стандартной настройки для всех вновь создаваемых
+учетных записей (учетная запись при этом не создается).</div>
+<div class="line">-e конечный_срок_ Срок истечения действия учетной записи_действия</div>
+<div class="line">-f срок бездействия Количество дней после окончания срока действия
+пароля, по прошествии которых учетная запись пользователя будет
+удалена. По умолчанию данный параметр имеет значение -1, что указывает
+на необходимость его игнорирования.</div>
+<div class="line">-g группа Первичная группа пользователя.</div>
+<div class="line">-G список_групп Добавление пользователя в указанный список групп,
+разделенных запятыми.</div>
+<div class="line">-k эталонный_каталог Определяет структуру каталога, включающую в себя
+файлы первоначальной конфигурации и сценарии регистрации, которые
+должны быть скопированы в домашний каталог пользователя. Этот параметр
+может быть использован только вместе с параметром -m.</div>
+<div class="line">-m Автоматическое создание домашнего каталога пользователя и
+копирование в него файлов «эталонного» каталога (/etc/skel).</div>
+<div class="line">-M Запрещает создание домашнего каталога пользователя, даже если это
+предусмотрено по умолчанию.</div>
+<div class="line">-n Запрещает создание новой группы, соответствующей имени и
+идентификационноиу номеру пользователя, которая обычно создается по
+умолчанию.</div>
+<div class="line">-r Создать учетную запись с идентификационным номером пользователя,
+который принадлежит диапазону, зарезервированному для системных
+учетных записей.</div>
+<div class="line">-s оболочка Командная оболочка, которая должна быть ассоциирована с
+данной учетной записью пользователя.</div>
+<div class="line">-u идентиф._номер Идентификационный номер пользователя. По умолчанию
+автоматически задается следующий по порядку доступный номер.</div>
+</div>
+
+
+
+<div class="sharing">
+</div>
+<hr>
+		
+	</section>
+	<div class="clearfix"></div>
+
+</article>
+
+	</div>
+
+	<!-- Sidebar -->
+	<div class="four columns">
+
+		
+	</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Content Wrapper / End -->
+
+
+		<div id="footer-bottom">
+			<!-- Container -->
+			<div class="container">
+				<div class="eight columns">Blog powered by <a href="http://getpelican.com">Pelican</a></div>
+					<div class="eight columns">
+						<ul class="social-icons-footer">
+								<li>
+									<a href="#" class="tooltip top" title="You can add links in your config file">
+										<i class="icon-you can add links in your config file"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltip top" title="Another social link">
+										<i class="icon-another social link"></i>
+									</a>
+								</li>
+							<li><a href="/None" class="tooltip top" title="RSS"><i class="icon-rss"></i></a></li>
+						</ul>
+					</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Footer Bottom / End -->
+		
+	<!-- Javascripts -->
+	<script src="/theme/js/jquery.min.js"></script>
+	</body>
+</html>

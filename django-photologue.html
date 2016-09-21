@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+	<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Косолапов Дмитрий">
+
+
+        <title>Косолапов Дмитрий: мысли умные и не только. - django-photologue: установка и настройка</title>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/theme/css/style.css">
+
+        <!-- Custom CSS -->
+        	<link rel="stylesheet" href="/theme/css/colors/blue.css" id="colors">
+
+        <!-- Code highlight color scheme -->
+            <link href="/theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="Косолапов Дмитрий: мысли умные и не только.">
+
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="">
+	<meta property="og:url" content="/django-photologue.html">
+	<meta property="og:title" content="django-photologue: установка и настройка">
+	<meta property="og:description" content="">
+	   <meta property="og:image" content="/images/guilherme-toti.jpg">
+	<meta property="article:published_time" content="2010-03-08 23:30:00+06:00">
+	</head>
+	<body>
+		<header id="header">
+			<!-- Container -->
+			<div class="container">
+				<!-- Logo / Mobile Menu -->
+				<div class="nine.columns columns">
+					<div id="logo">
+						<h1><a href="/">Косолапов Дмитрий: мысли умные и не только.</a></h1>
+					</div>
+				</div>
+				<!-- Navigation
+				================================================== -->
+				<div class="seven columns">
+					
+					<nav id="navigation" class="menu">
+						<ul id="responsive">
+
+							<li><a href="/">Главная</a></li>
+
+
+							        <li><a href="/about.html">Обо мне</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Container / End -->
+		</header>
+		<!-- Header / End -->
+		
+		<div id="content-wrapper">
+			<section id="titlebar">
+				<!-- Container -->
+				<div class="container">
+					<div class="sixteen columns">						
+						<nav id="breadcrumbs">
+							<ul>
+								<li>Текущее нахождение:</li>
+								<li><a href="/">Главная</a></li>
+<li><a href="/category/python.html">python</a></li>
+<li>django-photologue: установка и настройка</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+				<!-- Container / End -->
+			</section>
+
+			<div class="container">
+	<div class="twelve alt columns">
+<article class="post" style="margin: 0; border: 0;">
+	
+	<div class="post-format">
+		<div class="circle"><i class="icon-pencil"></i><span></span></div>
+	</div>
+
+	<section class="post-content">
+
+		<header class="meta">
+			<h2><a href="/django-photologue.html">django-photologue: установка и настройка</a></h2>
+			<ul>
+				<li>By <a href="/author/admin.html">admin</a></li>
+				<li>Пн 08 Март 2010</li>
+			</ul>
+		</header>
+
+		<p>Наткнулся на готовую фото
+галерею&nbsp;«<a class="reference external" href="http://code.google.com/p/django-photologue/">django-photologue</a>»
+для джанги. Мне она приглянулась по нескольким причинам:</p>
+<ul class="simple">
+<li>полностью готовое приложение;</li>
+<li>есть возможность накладывать водные знаки на фотографии;</li>
+<li>добавлять эффекты (а-ля мокрый пол), разворачивать изображения;</li>
+<li>готовая админка и все сопутствующие блага цивилизации.</li>
+</ul>
+<p>Ко всему прочему, хорошая
+<a class="reference external" href="http://code.google.com/p/django-photologue/w/list">документация</a>,
+скачать можно как с svn-а так и в виде
+<a class="reference external" href="http://code.google.com/p/django-photologue/downloads/list">архива</a>.</p>
+<p>Установка не совсем простая, хотя этот процесс описан в документации.
+Кратко опишу свои действия:</p>
+<ol class="arabic simple">
+<li>через терминал устанавливаем само приложение;</li>
+<li>копируем каталог с шаблонами этого приложения в каталог шаблонов
+своего приложения;</li>
+<li>в файле settings.py указываем путь до файла sample.jpg. Этот файл
+также находится в дистрибутиве.</li>
+</ol>
+<p>Недостатком можно отметить отсутствие поддержки названий водных знаков
+на русском языке, о которой я уже
+<a class="reference external" href="http://code.google.com/p/django-photologue/issues/detail?id=152&amp;sort=status">сообщил</a>.</p>
+<p>Еще с одной трудностью столкнулся, что у меня вместо пред просмотра
+фотографий была надпись «An &quot;admin_thumbnail&quot; photo size has not been
+defined.». Эта проблема решилась запуском «python manage.py plinit» и
+вводом параметров изображений:</p>
+<blockquote>
+<p><a class="reference external" href="mailto:dmitry&#64;dmitry-desktop">dmitry&#64;dmitry-desktop</a>:~/web/nskgarant$ python manage.py plinit</p>
+<div class="line-block">
+<div class="line">Photologue requires a specific photo size to display thumbnail
+previews in the Django admin application.</div>
+<div class="line">Would you like to generate this size now? (yes, no):yes</div>
+</div>
+<p>We will now define the &quot;admin_thumbnail&quot; photo size:</p>
+<div class="line-block">
+<div class="line">Width (in pixels):80</div>
+<div class="line">Height (in pixels):60</div>
+<div class="line">Crop to fit? (yes, no):yes</div>
+<div class="line">Pre-cache? (yes, no):yes</div>
+<div class="line">Increment count? (yes, no):no</div>
+</div>
+<p>A &quot;admin_thumbnail&quot; photo size has been created.</p>
+<p>Would you like to apply a sample enhancement effect to your admin
+thumbnails? (yes, no):yes</p>
+<div class="line-block">
+<div class="line">Photologue comes with a set of templates for setting up a complete
+photo gallery. These templates require you to define both a
+&quot;thumbnail&quot; and &quot;display&quot; size.</div>
+<div class="line">Would you like to define them now? (yes, no):yes</div>
+</div>
+<p>We will now define the &quot;thumbnail&quot; photo size:</p>
+<div class="line-block">
+<div class="line">Width (in pixels):80</div>
+<div class="line">Height (in pixels):60</div>
+<div class="line">Crop to fit? (yes, no):yes</div>
+<div class="line">Pre-cache? (yes, no):yes</div>
+<div class="line">Increment count? (yes, no):no</div>
+</div>
+<p>A &quot;thumbnail&quot; photo size has been created.</p>
+<p>We will now define the &quot;display&quot; photo size:</p>
+<div class="line-block">
+<div class="line">Width (in pixels):800</div>
+<div class="line">Height (in pixels):600</div>
+<div class="line">Crop to fit? (yes, no):yes</div>
+<div class="line">Pre-cache? (yes, no):yes</div>
+<div class="line">Increment count? (yes, no):no</div>
+</div>
+<p>A &quot;display&quot; photo size has been created.</p>
+<p>Would you like to apply a sample reflection effect to your display
+images? (yes, no):yes</p>
+</blockquote>
+<p>Сперва спрашиваются нужно ли показывать в админке уменьшенные
+изображения. В случае положительного ответа запрашивается ширина,
+высота, нужно ли обрезать изображения, кешировать ли уменьшенные
+изображения и ставить ли на картинках номера изображений. Следующий
+вопрос о том, стоит ли применить внесенные изменения к текущим
+изображениям.</p>
+<p>Далее задаются вопросы о том, стоит ли задать значения для уменьшенного
+«большого» изображений. Смысл вводимых параметров совпадает с
+перечисленными выше.</p>
+<p>Приведу несколько скриншотов для понимания того, что это вообще такое:</p>
+<p>[gallery link=&quot;file&quot;]</p>
+
+
+
+<div class="sharing">
+</div>
+<hr>
+		
+	</section>
+	<div class="clearfix"></div>
+
+</article>
+
+	</div>
+
+	<!-- Sidebar -->
+	<div class="four columns">
+
+		
+	</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Content Wrapper / End -->
+
+
+		<div id="footer-bottom">
+			<!-- Container -->
+			<div class="container">
+				<div class="eight columns">Blog powered by <a href="http://getpelican.com">Pelican</a></div>
+					<div class="eight columns">
+						<ul class="social-icons-footer">
+								<li>
+									<a href="#" class="tooltip top" title="You can add links in your config file">
+										<i class="icon-you can add links in your config file"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltip top" title="Another social link">
+										<i class="icon-another social link"></i>
+									</a>
+								</li>
+							<li><a href="/None" class="tooltip top" title="RSS"><i class="icon-rss"></i></a></li>
+						</ul>
+					</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Footer Bottom / End -->
+		
+	<!-- Javascripts -->
+	<script src="/theme/js/jquery.min.js"></script>
+	</body>
+</html>

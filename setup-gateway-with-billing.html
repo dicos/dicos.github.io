@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+	<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Косолапов Дмитрий">
+
+
+        <title>Косолапов Дмитрий: мысли умные и не только. - Ставим шлюз с биллингом</title>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/theme/css/style.css">
+
+        <!-- Custom CSS -->
+        	<link rel="stylesheet" href="/theme/css/colors/blue.css" id="colors">
+
+        <!-- Code highlight color scheme -->
+            <link href="/theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="Косолапов Дмитрий: мысли умные и не только.">
+
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="">
+	<meta property="og:url" content="/setup-gateway-with-billing.html">
+	<meta property="og:title" content="Ставим шлюз с биллингом">
+	<meta property="og:description" content="">
+	   <meta property="og:image" content="/images/guilherme-toti.jpg">
+	<meta property="article:published_time" content="2010-04-05 13:53:00+07:00">
+	</head>
+	<body>
+		<header id="header">
+			<!-- Container -->
+			<div class="container">
+				<!-- Logo / Mobile Menu -->
+				<div class="nine.columns columns">
+					<div id="logo">
+						<h1><a href="/">Косолапов Дмитрий: мысли умные и не только.</a></h1>
+					</div>
+				</div>
+				<!-- Navigation
+				================================================== -->
+				<div class="seven columns">
+					
+					<nav id="navigation" class="menu">
+						<ul id="responsive">
+
+							<li><a href="/">Главная</a></li>
+
+
+							        <li><a href="/about.html">Обо мне</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Container / End -->
+		</header>
+		<!-- Header / End -->
+		
+		<div id="content-wrapper">
+			<section id="titlebar">
+				<!-- Container -->
+				<div class="container">
+					<div class="sixteen columns">						
+						<nav id="breadcrumbs">
+							<ul>
+								<li>Текущее нахождение:</li>
+								<li><a href="/">Главная</a></li>
+<li><a href="/category/sisadminstvo.html">сисадминство</a></li>
+<li>Ставим шлюз с биллингом</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+				<!-- Container / End -->
+			</section>
+
+			<div class="container">
+	<div class="twelve alt columns">
+<article class="post" style="margin: 0; border: 0;">
+	
+	<div class="post-format">
+		<div class="circle"><i class="icon-pencil"></i><span></span></div>
+	</div>
+
+	<section class="post-content">
+
+		<header class="meta">
+			<h2><a href="/setup-gateway-with-billing.html">Ставим шлюз с биллингом</a></h2>
+			<ul>
+				<li>By <a href="/author/admin.html">admin</a></li>
+				<li>Пн 05 Апрель 2010</li>
+			</ul>
+		</header>
+
+		<p>В шлюзе (компьютер, который обеспечивает подступ в интернет другим
+компьютерам организации) должно стоять 2 сетевых карты: одна для
+подключения внутренней сети, вторая для подключения интернета.</p>
+<p>Сперва проверим, определились ли сетевые карты, введя команду</p>
+<blockquote>
+<p>ifconfig -a</p>
+<p>Результат выполнения команды:</p>
+<div class="line-block">
+<div class="line"><a class="reference external" href="mailto:test&#64;test-gateway">test&#64;test-gateway</a>:~$ ifconfig -a</div>
+<div class="line">eth0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Link encap:Ethernet&nbsp; HWaddr e0:cb:4e:1c:29:ba</div>
+<div class="line">inet addr:192.168.1.99&nbsp; Bcast:192.168.1.255&nbsp; Mask:255.255.255.0</div>
+<div class="line">inet6 addr: fe80::e2cb:4eff:fe1c:29ba/64 Диапазон:Ссылка</div>
+<div class="line">UP BROADCAST RUNNING MULTICAST&nbsp; MTU:1500&nbsp; Metric:1</div>
+<div class="line">RX packets:3400 errors:0 dropped:0 overruns:0 frame:0</div>
+<div class="line">TX packets:410 errors:0 dropped:0 overruns:0 carrier:0</div>
+<div class="line">коллизии:0 txqueuelen:100</div>
+<div class="line">RX bytes:568554 (568.5 KB)&nbsp; TX bytes:53278 (53.2 KB)</div>
+<div class="line">Память:fbee0000-fbf00000</div>
+</div>
+<div class="line-block">
+<div class="line">eth1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Link encap:Ethernet&nbsp; HWaddr e0:cb:4e:1c:27:d8</div>
+<div class="line">BROADCAST MULTICAST&nbsp; MTU:1500&nbsp; Metric:1</div>
+<div class="line">RX packets:0 errors:0 dropped:0 overruns:0 frame:0</div>
+<div class="line">TX packets:0 errors:0 dropped:0 overruns:0 carrier:0</div>
+<div class="line">коллизии:0 txqueuelen:1000</div>
+<div class="line">RX bytes:0 (0.0 B)&nbsp; TX bytes:0 (0.0 B)</div>
+<div class="line">Память:fbde0000-fbe00000</div>
+</div>
+<div class="line-block">
+<div class="line">lo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Link encap:Локальная петля (Loopback)</div>
+<div class="line">inet addr:127.0.0.1&nbsp; Mask:255.0.0.0</div>
+<div class="line">inet6 addr: ::1/128 Диапазон:Узел</div>
+<div class="line">UP LOOPBACK RUNNING&nbsp; MTU:16436&nbsp; Metric:1</div>
+<div class="line">RX packets:0 errors:0 dropped:0 overruns:0 frame:0</div>
+<div class="line">TX packets:0 errors:0 dropped:0 overruns:0 carrier:0</div>
+<div class="line">коллизии:0 txqueuelen:0</div>
+<div class="line">RX bytes:0 (0.0 B)&nbsp; TX bytes:0 (0.0 B)</div>
+</div>
+<p><a class="reference external" href="mailto:test&#64;test-gateway">test&#64;test-gateway</a>:~$</p>
+</blockquote>
+<p>У меня сетевая карта eth0 подключена к интернету, eth1 к локальной сети.
+При установке системы (ubuntu server 9.10) подключение к интернету было
+настроено. Разберемся, как подключится к локальной сети. IP адрес
+локальной сети 192.168.3.1 маска: 255.255.255.0 шлюза нет. Для настройки
+вводим команды изменения настроек для сетевой карты eth1 и перезагружаем
+сеть</p>
+<blockquote>
+<div class="line-block">
+<div class="line">sudo ifconfig eth1 192.168.3.1 netmask 255.255.255.0</div>
+<div class="line">sudo /etc/init.d/networking restart</div>
+</div>
+</blockquote>
+<p>Подсоединяем ко второй сетевой карте другой компьютер, назначаем ему
+адрес (я назначил 192.168.3.2) и пробуем этот компьютер попинговать,
+должно работать. Более подробно настройка сети описана в статье
+«<a class="reference external" href="http://itshaman.ru/articles/54/nastroika-lokalnoi-seti-v-linux">Настройка локальной сети в
+Linux</a>».</p>
+<p>Далее, настроим фаервол так, чтобы из внутренней сети был виден
+интернет, а из интернета внутренняя сеть была недоступна. Для начала
+создадим пароль для пользователя root, в дальнейшем все команды будем
+делать из-под него.</p>
+<blockquote>
+sudo passwd root</blockquote>
+<p>потом переходим в режим управления root -ом</p>
+<blockquote>
+su root</blockquote>
+<p>Редактируем файл sysctl.conf командой nano /etc/sysctl.conf . Здесь
+находим строку sctl net.ipv4.ip_forward = 1 и снимаем с нее
+комментирование. Сохраняем файл и выходим из редактора. Выполняем
+команду echo 1 &gt; /proc/sys/net/ipv4/ip_forward.</p>
+<p>Устанавливаем следующие пакеты:</p>
+<ul class="simple">
+<li>mc -- консольный файловый менеджер для *nix систем;</li>
+<li>squid -- прокси-сервер;</li>
+<li>build-essential libgnademysql-dev iptables-dev libcurl4-openssl-dev
+libfreeradius-dev libssl-dev libmysql++-dev -- необходимые библиотеки
+для установки traffpro</li>
+<li>mysql-server mysql-client apache2 libapache2-mod-php5 php5
+php5-common php5-curl php5-dev php5-gd php5-idn php-pear php5-imagick
+php5-imap php5-mcrypt php5-memcache php5-mhash php5-ming php5-mysql
+php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc
+php5-xsl apache2-doc apache2-mpm-prefork apache2-utils libexpat1
+ssl-cert libmysqlclient15-dev -- эти пакеты нужны для того, чтобы
+настроить веб-сервер. &nbsp;Дело в том, что для управления биллинговой
+системой используется веб-интерфейс.</li>
+</ul>
+<p>установка очень простая: вводим команду sudo apt-get install mc squid
+build-essential libgnademysql-dev iptables-dev libcurl4-openssl-dev
+libfreeradius-dev libssl-dev libmysql++-dev mysql-server mysql-client
+apache2 libapache2-mod-php5 php5 php5-common php5-curl php5-dev php5-gd
+php5-idn php-pear php5-imagick php5-imap php5-mcrypt php5-memcache
+php5-mhash php5-ming php5-mysql php5-pspell php5-recode php5-snmp
+php5-sqlite php5-tidy php5-xmlrpc php5-xsl apache2-doc
+apache2-mpm-prefork apache2-utils libexpat1 ssl-cert
+libmysqlclient15-dev&nbsp;-y . Параметр -y нужен для того, чтобы не система
+не спрашивала о подтверждении установки дополнительных пакетов.</p>
+<p>В ходе установки потребуется ввести пароль от mysql. Задать можно любой.
+главное его запомнить, он еще пригодится.</p>
+<p>Удалим прокси-сервер squid из автозагрузки, выполнив команду sudo
+update-rc.d -f squid remove&nbsp;. Далее, нам надо остановить сам squid. Для
+этого выполняем команду sudo /etc/init.d/squid stop</p>
+<p>После установки этих пакетов, нам нужно создать пустую базу данных MySQL
+&nbsp;и добавить пользователя к ней. Для этого, вводим команду</p>
+<blockquote>
+mysql -u root -p</blockquote>
+<p>система запросит ввести пароль. Вводим тот пароль, который мы вводили
+при установке MySQL. Если забыли, то <a class="reference external" href="http://www.guruadmin.ru/page/vosstanavlivaem-parol-root-v-mysql">восстанавливаем
+забытое</a>.</p>
+<p>После того, как «зашли» в базу mysql создаем базу данных, и
+пользователя, которому назначаем привелегии</p>
+<blockquote>
+<div class="line-block">
+<div class="line">mysql&gt;create database traffpro;</div>
+<div class="line">mysql&gt;GRANT ALL PRIVILEGES ON traffpro.* TO
+<a class="reference external" href="mailto:traffpro_user&#64;'localhost">traffpro_user&#64;'localhost</a>' IDENTIFIED BY 'MY_PASSWORD' WITH GRANT
+OPTION;</div>
+</div>
+</blockquote>
+<p>где traffpro -- название базы данных, traffpro_user -- имя
+пользователя, MY_PASSWORD -- пароль пользователя.</p>
+<p>далее заходим на сайт traffpro.ru, идем в раздел скачать, заходим в
+каталог release/BASH_INSTALLER и находим последний релиз traffpro. на
+момент 02.04.2010 это будет архив
+<a class="reference external" href="http://download.upit-systems.com/release/BASH_INSTALLER/traffpro.free.1.3.4-01.tar.gz">traffpro.free.1.3.4-01.tar.gz</a>
+. Качаем командой wget адрес_архива (например, wget
+<a class="reference external" href="http://download.upit-systems.com/release/BASH_INSTALLER/traffpro.free.1.3.4-01.tar.gz">http://download.upit-systems.com/release/BASH_INSTALLER/traffpro.free.1.3.4-01.tar.gz</a>)</p>
+<p>Распакуем скачаный нами архив в каталог tmp командой tar -xvf
+traffpro.free.1.3.4-01.tar.gz -C /tmp</p>
+<p>Итак, подготовительные операции мы осуществили, теперь займемся
+непосредственной установкой билинга. Для этого заходим в распакованный
+каталог с установщиком и запускаем его. Так как переходим в каталог
+командой cd &nbsp;/tmp/traffpro.tree.1.3.4/. &nbsp;В этом каталоге запускаем сам
+установщик командой sudo sh install.sh.</p>
+<p>Отвечаем на вопросы так:</p>
+<p>Лично у меня графическая установка не заработала, так как не был
+установлен пакет dialog, да и Бог с ней - на предложение запустить
+установку в графическом режиме (Start TraffPro installation in graphic
+mode? [y/n]) отвечаем - n</p>
+<p>Выбираем тип дистрибутива - 1 - Debian/Ubuntu or other</p>
+<p>Собрать демон контроля (y) или использовать уже собранный (n)? - y</p>
+<p>Собрать демон таймера (y) или использовать уже собранный (n)? - y</p>
+<p>Сохранить предыдущие настройки TraffPro (в директорию
+/var/traffpro_back)? [y/n] - n</p>
+<p>Обновляем систему (y) или устанавливаем (n)? - n</p>
+<p>Настроить систему сейчас (y) или оставить настройки по-умолчанию (n)? -
+y</p>
+<p>Укажите путь установки TraffPro (по-умолчанию - /opt/traffpro) -
+оставляем по-умолчанию</p>
+<p>Запускать TraffPro в режиме демона? [y/n] - y</p>
+<p>Укажите расположение базы данных (по-умолчанию - localhost) - y</p>
+<p>Введите имя пользователя базы данных MySQL (по-умолчанию - root) -
+traffpro_user</p>
+<p>Введите пароль пользователя базы данных MySQL (по-умолчанию - пустой) -
+MY_PASSWORD</p>
+<p>Введите имя базы данных MySQL (по-умолчанию - traffpro) - оставляем
+по-умолчанию</p>
+<p>Включить контроль MAC адресов? [y/n] - n</p>
+<p>Включить детализацию по портам [y/n]? - y</p>
+<p>Включить учет трафика и защиту сервера? [y/n] - n</p>
+<p>Укажите внешний интерфейс (по-умолчанию - eth0) - пока оставляем eth0</p>
+<p>Включить детализацию WWW страниц? [y/n] - y</p>
+<p>Введите внешний IP-адрес на интерфейсе для того, чтобы поднять NAT (или
+оставьте пустым, для того, чтобы поднять MASQUERADE) - 192.168.1.99 (см
+ifconfig в начале)</p>
+<p>Укажите IP-адрес для прослушивания монитора (по-умолчанию - 127.0.0.1) -
+оставляем по-умолчанию</p>
+<p>Укажите порт для прослушивания монитора: (по-умолчанию - 9999) -
+оставляем по-умолчанию</p>
+<p>Укажите размер очереди пакетов (по-умолчанию - 2048) - оставляем
+по-умолчанию</p>
+<p>Укажите имя администратора TraffPro (по-умолчанию - admin) - оставляем
+по-умолчанию</p>
+<p>Укажите пароль администратора TraffPro (по-умолчанию - admin) -
+оставляем по-умолчанию</p>
+<p>Настроить Traffpro на работу с прозрачным squid? [y/n] - y</p>
+<p>Укажите вашу сеть и маску сети (по-умолчанию -
+192.168.0.0/255.255.255.0) - 192.168.5.0/255.255.255.0</p>
+<p>Укажите порт SQUID для подключения (по-умолчанию - 3128) - оставляем
+по-умолчанию</p>
+<p>Включить встроенный парсер логов squid? [y/n] - y</p>
+<p>Укажите лог-файл SQUID (по-умолчанию - /var/log/squid/access.log) -
+оставляем по-умолчанию</p>
+<p>Включить планировщик заданий? [y/n] - y</p>
+<p>Загрузить модули для работы ftp сервисов? [y/n] - y</p>
+<p>Добавить администратора в базу данных [y/n]? - y</p>
+<p>Запускать TraffPro при загрузке системы? [y/n] - y</p>
+<p>Когда установка закончится активируем модуль веб-сервера apache
+mod_rewrite.so -- этот модуль обеспечивает при отсутствии какого-то
+запрашиваемого файла на веб-сервере будет вызван какой-то обрабатывающий
+скрипт. Для этого выполним команды:</p>
+<blockquote>
+<p>cd /etc/apache2/mods-available/</p>
+<p>sudo a2enmod rewrite</p>
+<p>sudo /etc/init.d/apache2 restart</p>
+</blockquote>
+<p>Если все выполнили нормально, то зайдя по адресу
+<a class="reference external" href="http://192.168.1.99/traffpro/index.php/admin_login/">http://192.168.1.99/traffpro/index.php/admin_login/</a> должны форму входа в
+блок администраторов. логин и пароль задавали при установки самого
+билинга. По умолчанию логин и пароль admin.</p>
+<p>Теперь настроим прокси-вервер squid. Открываем файл squid.conf командой
+sudo nano /etc/squid/squid.conf</p>
+<div class="line-block">
+<div class="line">Добавляем следующие строки в соответствующие разделы&nbsp; acl localnet src
+192.168.5.0/24</div>
+<div class="line">http_access allow localnet</div>
+<div class="line">icp_access allow localnet</div>
+<div class="line">http_port 192.168.5.1:3128 transparent</div>
+</div>
+<div class="line-block">
+<div class="line">Открываем файл traffpro_rule.cfg командой sudo nano
+/etc/traffpro/traffpro_rule.cfg</div>
+<div class="line">пишем&nbsp; следющий код</div>
+</div>
+<blockquote>
+<p>iptables -A INPUT -m tcp -p tcp --dport 22 -j ACCEPT</p>
+<p>iptables -A OUTPUT -m tcp -p tcp --sport 22 -j ACCEPT</p>
+<p>iptables -A INPUT -i eth0 -p tcp -m tcp --dport 3128 -j QUEUE</p>
+<p>iptables -A OUTPUT -o eth0 -p tcp -m tcp --sport 3128 -j QUEUE</p>
+<p>iptables -t nat -A PREROUTING -p tcp --dport 80 -i eth0 -s
+192.168.5.0/24 -j REDIRECT --to-ports 3128</p>
+<p>modprobe ip_conntrack_ftp</p>
+<p>modprobe ip_nat_ftp</p>
+</blockquote>
+<p>Далее, перезагружаем компьютер, и у нас должно все работать.</p>
+<p>Примерный список статей, по которым я настраивал traffpro:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://traffpro.ru/forum/topic_845">http://traffpro.ru/forum/topic_845</a></li>
+<li><a class="reference external" href="http://free.upit-systems.com/forum/topic_243#post-6">http://free.upit-systems.com/forum/topic_243#post-6</a></li>
+<li><a class="reference external" href="http://www.openkazan.info/TraffPro_NAT_Ubuntu_Linux">http://www.openkazan.info/TraffPro_NAT_Ubuntu_Linux</a></li>
+</ul>
+
+
+
+<div class="sharing">
+</div>
+<hr>
+		
+	</section>
+	<div class="clearfix"></div>
+
+</article>
+
+	</div>
+
+	<!-- Sidebar -->
+	<div class="four columns">
+
+		
+	</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Content Wrapper / End -->
+
+
+		<div id="footer-bottom">
+			<!-- Container -->
+			<div class="container">
+				<div class="eight columns">Blog powered by <a href="http://getpelican.com">Pelican</a></div>
+					<div class="eight columns">
+						<ul class="social-icons-footer">
+								<li>
+									<a href="#" class="tooltip top" title="You can add links in your config file">
+										<i class="icon-you can add links in your config file"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltip top" title="Another social link">
+										<i class="icon-another social link"></i>
+									</a>
+								</li>
+							<li><a href="/None" class="tooltip top" title="RSS"><i class="icon-rss"></i></a></li>
+						</ul>
+					</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Footer Bottom / End -->
+		
+	<!-- Javascripts -->
+	<script src="/theme/js/jquery.min.js"></script>
+	</body>
+</html>

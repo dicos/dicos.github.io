@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+	<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Косолапов Дмитрий">
+
+
+        <title>Косолапов Дмитрий: мысли умные и не только. - Нет DjangoUnicodeDecodeError</title>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/theme/css/style.css">
+
+        <!-- Custom CSS -->
+        	<link rel="stylesheet" href="/theme/css/colors/blue.css" id="colors">
+
+        <!-- Code highlight color scheme -->
+            <link href="/theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="Косолапов Дмитрий: мысли умные и не только.">
+
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="">
+	<meta property="og:url" content="/djangounicodedecodeerror.html">
+	<meta property="og:title" content="Нет DjangoUnicodeDecodeError">
+	<meta property="og:description" content="">
+	   <meta property="og:image" content="/images/guilherme-toti.jpg">
+	<meta property="article:published_time" content="2010-05-31 18:15:00+07:00">
+	</head>
+	<body>
+		<header id="header">
+			<!-- Container -->
+			<div class="container">
+				<!-- Logo / Mobile Menu -->
+				<div class="nine.columns columns">
+					<div id="logo">
+						<h1><a href="/">Косолапов Дмитрий: мысли умные и не только.</a></h1>
+					</div>
+				</div>
+				<!-- Navigation
+				================================================== -->
+				<div class="seven columns">
+					
+					<nav id="navigation" class="menu">
+						<ul id="responsive">
+
+							<li><a href="/">Главная</a></li>
+
+
+							        <li><a href="/about.html">Обо мне</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Container / End -->
+		</header>
+		<!-- Header / End -->
+		
+		<div id="content-wrapper">
+			<section id="titlebar">
+				<!-- Container -->
+				<div class="container">
+					<div class="sixteen columns">						
+						<nav id="breadcrumbs">
+							<ul>
+								<li>Текущее нахождение:</li>
+								<li><a href="/">Главная</a></li>
+<li><a href="/category/python-bazy-dannykh-sisadminstvo.html">python, базы данных, сисадминство</a></li>
+<li>Нет DjangoUnicodeDecodeError</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+				<!-- Container / End -->
+			</section>
+
+			<div class="container">
+	<div class="twelve alt columns">
+<article class="post" style="margin: 0; border: 0;">
+	
+	<div class="post-format">
+		<div class="circle"><i class="icon-pencil"></i><span></span></div>
+	</div>
+
+	<section class="post-content">
+
+		<header class="meta">
+			<h2><a href="/djangounicodedecodeerror.html">Нет DjangoUnicodeDecodeError</a></h2>
+			<ul>
+				<li>By <a href="/author/admin.html">admin</a></li>
+				<li>Пн 31 Май 2010</li>
+			</ul>
+		</header>
+
+		<p>Недавно администрировал сервер, нужно было установить работающий проект.
+Сразу отмечу, что в качестве СУБД был взят MySQL, так как он уже был
+установлен и настроен. База данных успешно была создана, кодировка этой
+базы utf8. Но начав помещать тестовые данные столкнулся с пролемой:</p>
+<blockquote>
+<div class="line-block">
+<div class="line">TemplateSyntaxError at /admin/staff/color/</div>
+<div class="line">Caught DjangoUnicodeDecodeError while rendering: ('ascii',
+'\xd0\x9f\xd0\xb5\xd0\xbf\xd0\xb5\xd0\xbb\xd1\x8c\xd0\xbd\xd1\x8b\xd0\xb9',
+0, 1, 'ordinal not in range(128)')</div>
+</div>
+<div class="line-block">
+<div class="line-block">
+<div class="line">Request Method: GET</div>
+</div>
+<div class="line">Request URL: <a class="reference external" href="http://******/admin/staff/color/">http://******/admin/staff/color/</a></div>
+<div class="line">Django Version: 1.2.1</div>
+<div class="line">Exception Type: TemplateSyntaxError</div>
+<div class="line">Exception Value:</div>
+<div class="line">Caught DjangoUnicodeDecodeError while rendering: ('ascii',
+'\xd0\x9f\xd0\xb5\xd0\xbf\xd0\xb5\xd0\xbb\xd1\x8c\xd0\xbd\xd1\x8b\xd0\xb9',
+0, 1, 'ordinal not in range(128)')</div>
+<div class="line">Exception Location:
+/usr/local/lib/python2.6/dist-packages/django/utils/encoding.py in
+force_unicode, line 88</div>
+<div class="line">Python Executable: /usr/bin/python</div>
+<div class="line">.............................................................................................</div>
+<div class="line">Template error</div>
+<div class="line">In template
+/usr/local/lib/python2.6/dist-packages/django/contrib/admin/templates/admin/change_list.html,
+error at line 95</div>
+<div class="line">или In template
+/usr/local/lib/python2.6/dist-packages/django/contrib/admin/templates/admin/index.html,
+error at line 70</div>
+</div>
+</blockquote>
+<p>Разрешил эту проблему так: удалил все таблицы, затем задал кодировку
+базы данных utf8, а сопоставление
+``utf8_general_ci (раньше сопоставление имело значение utf8_bin) ``таким
+запросом:</p>
+<blockquote>
+``ALTER DATABASE `db_akula` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci``</blockquote>
+<p>.. raw:: html</p>
+<blockquote>
+&lt;div id=&quot;_mcePaste&quot;
+style=&quot;position: absolute; left: -10000px; top: 0px; width: 1px; height: 1px; overflow-x: hidden; overflow-y: hidden; text-align: left;&quot;&gt;</blockquote>
+<dl class="docutils">
+<dt>.. rubric:: TemplateSyntaxError at /admin/staff/color/</dt>
+<dd><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">templatesyntaxerror-at-adminstaffcolor</td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
+<p>.. code:: exception_value</p>
+<blockquote>
+Caught DjangoUnicodeDecodeError while rendering: ('ascii', 'xd0x9fxd0xb5xd0xbfxd0xb5xd0xbbxd1x8cxd0xbdxd1x8bxd0xb9', 0, 1, 'ordinal not in range(128)')</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>Request Method:</td>
+<td>GET</td>
+</tr>
+<tr><td>Request URL:</td>
+<td><a class="reference external" href="http://db.dicos.ru/admin/staff/color">http://db.dicos.ru/admin/staff/color</a>
+/</td>
+</tr>
+<tr><td>Django Version:</td>
+<td>1.2.1</td>
+</tr>
+<tr><td>Exception Type:</td>
+<td>TemplateSyntaxError</td>
+</tr>
+<tr><td>Exception Value:</td>
+<td><p class="first">::</p>
+<p class="last">Caught DjangoUnicodeDecodeError
+while rendering: ('ascii', 'xd0x9f
+xd0xb5xd0xbfxd0xb5xd0xbbxd1
+x8cxd0xbdxd1x8bxd0xb9', 0, 1,
+'ordinal not in range(128)')</p>
+</td>
+</tr>
+<tr><td>Exception Location:</td>
+<td>/usr/local/lib/python2.6/dist-packag
+es/django/utils/encoding.py
+in force_unicode, line 88</td>
+</tr>
+<tr><td>Python Executable:</td>
+<td>/usr/bin/python</td>
+</tr>
+<tr><td>Python Version:</td>
+<td>2.6.4</td>
+</tr>
+<tr><td>Python Path:</td>
+<td>['/usr/lib/python2.6',
+'/usr/lib/python2.6/plat-linux2',
+'/usr/lib/python2.6/lib-tk',
+'/usr/lib/python2.6/lib-old',
+'/usr/lib/python2.6/lib-dynload',
+'/usr/lib/python2.6/dist-packages',
+'/usr/lib/pymodules/python2.6',
+'/usr/lib/pymodules/python2.6/gtk-2.
+0',
+'/usr/local/lib/python2.6/dist-packa
+ges',
+'/home/db_akula/www/']</td>
+</tr>
+<tr><td>Server time:</td>
+<td>Пнд, 31 Май 2010 17:58:02 +0700</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<div class="sharing">
+</div>
+<hr>
+		
+	</section>
+	<div class="clearfix"></div>
+
+</article>
+
+	</div>
+
+	<!-- Sidebar -->
+	<div class="four columns">
+
+		
+	</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Content Wrapper / End -->
+
+
+		<div id="footer-bottom">
+			<!-- Container -->
+			<div class="container">
+				<div class="eight columns">Blog powered by <a href="http://getpelican.com">Pelican</a></div>
+					<div class="eight columns">
+						<ul class="social-icons-footer">
+								<li>
+									<a href="#" class="tooltip top" title="You can add links in your config file">
+										<i class="icon-you can add links in your config file"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltip top" title="Another social link">
+										<i class="icon-another social link"></i>
+									</a>
+								</li>
+							<li><a href="/None" class="tooltip top" title="RSS"><i class="icon-rss"></i></a></li>
+						</ul>
+					</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Footer Bottom / End -->
+		
+	<!-- Javascripts -->
+	<script src="/theme/js/jquery.min.js"></script>
+	</body>
+</html>
