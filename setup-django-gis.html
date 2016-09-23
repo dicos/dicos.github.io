@@ -116,31 +116,25 @@
 виндовс (сервер 2003). В качестве СУБД выбрал postgres</p>
 <p>Установка на убунту 10.04: Итак, для начала нам надо установить все
 необходимые компоненты командой</p>
-<blockquote>
-apt-get install binutils libgdal1-1.6.0&nbsp; postgresql-8.4-postgis
-postgresql-server-dev-8.4
-``libgeoip1 gdal-bin python-gdal ``libgeos-c1
-libgeos-dev`` proj ``binutils bzip2 gcc g++ flex make
-python-ctypes xml2-config libxml2-dev python-libxml2 xml2</blockquote>
+<pre class="literal-block">
+apt-get install binutils libgdal1-1.6.0&nbsp; postgresql-8.4-postgis postgresql-server-dev-8.4
+libgeoip1 gdal-bin python-gdal libgeos-c1&nbsp; libgeos-dev proj binutils bzip2 gcc g++ flex make
+python-ctypes xml2-config libxml2-dev python-libxml2 xml2
+</pre>
 <p>Тут я перечислил версии пакетов которые поддерживаются моим домашним
 компьютером (ubuntu 10.04). Если стоит более новая система, то лучше
 всего устанавливать новые версии пакетов. Версии пакетов определяют
 цифры в названиях пакетов. Чтобы узнать список пакетов, достаточно
 выполнить команду &quot;aptitude search неполное_название_пакета&quot;, например
 найдем пакеты, содержащие название &quot;libgeos&quot;:</p>
-<blockquote>
-<div class="line-block">
-<div class="line">aptitude search libgeos</div>
-<div class="line">i ibgeos-3.1.0 - Geometry engine for Geographic Information
-Systems - C++ Library</div>
-<div class="line">i libgeos-c1 - Geometry engine for Geographic Information Systems
-- C Library</div>
-<div class="line">p libgeos-dev - Geometry engine for GIS - Development files</div>
-<div class="line">p libgeos-doc - Documentation for the GEOS GIS geometry engine
-library</div>
-<div class="line">p libgeosruby1.8 - GEOS bindings for Ruby</div>
-</div>
-</blockquote>
+<pre class="literal-block">
+aptitude search libgeos
+i ibgeos-3.1.0 - Geometry engine for Geographic Information Systems - C++ Library
+i libgeos-c1 - Geometry engine for Geographic Information Systems - C Library
+p libgeos-dev - Geometry engine for GIS - Development files
+p libgeos-doc - Documentation for the GEOS GIS geometry engine library
+p libgeosruby1.8 - GEOS bindings for Ruby
+</pre>
 <p>После того как успешно установили все эти пакеты, приступим к созданию
 шаблона пространственных баз данных. Я не стал заморачиваться установкой
 вручную, как это описано на странице оф. документации, а взял готовый
@@ -157,21 +151,17 @@ library</div>
 постгреса версии 8.3 а второй для версии 8.4.</p>
 <p>Эти скрипты нужно выполнять от имени пользователя postgres. Сейчас я
 покажу на примере установки на постгрес версии 8.3:</p>
-<blockquote>
-<div class="line-block">
-<div class="line"><a class="reference external" href="mailto:root&#64;server">root&#64;server</a>: su postgres</div>
-<div class="line"><a class="reference external" href="mailto:postgres&#64;server">postgres&#64;server</a>: sh create_template_postgis-1.3.sh</div>
-</div>
-</blockquote>
+<pre class="literal-block">
+root&#64;server: su postgres
+postgres&#64;server: sh create\_template\_postgis-1.3.sh
+</pre>
 <p>Если все выполнено верно, то последние слова будут такие:</p>
-<blockquote>
-<div class="line-block">
-<div class="line">COMMIT</div>
-<div class="line">VACUUM</div>
-<div class="line">GRANT</div>
-<div class="line">GRANT</div>
-</div>
-</blockquote>
+<pre class="literal-block">
+COMMIT
+VACUUM
+GRANT
+GRANT
+</pre>
 <p>Но если заканчивается словами «ERROR: relation &quot;spatial_ref_sys&quot; does
 not exist» то, перед тем, как запустить другой скрипт нужно будет
 удалить уже созданную базу данных. Я сделал это так: запустил
@@ -180,7 +170,8 @@ pgAdminIII, залез в базу данных postgres, потом в &quot;к
 на таблицу pg_database, в раскрывшемся списке выбрал пункт показать
 &quot;все строки&quot;. Значение ячейки, находящуюся в столбце datistemplate и
 строке template_postgis изменил на False.</p>
-<p><a class="reference external" href="http://dicos.ru/wp-content/uploads/2010/06/drop_template_database_1.png"><img alt="image0" class="alignnone size-medium wp-image-125" src="http://dicos.ru/wp-content/uploads/2010/06/drop_template_database_1-273x300.png" style="width: 273px; height: 300px;" /></a><a class="reference external" href="http://dicos.ru/wp-content/uploads/2010/06/drop_template_database_2.png"><img alt="image1" class="alignnone size-medium wp-image-126" src="http://dicos.ru/wp-content/uploads/2010/06/drop_template_database_2-300x94.png" style="width: 300px; height: 94px;" /></a></p>
+<p><a class="reference external" href="//img-fotki.yandex.ru/get/109111/44073636.2/0_132f26_36c6aa40_orig"><img alt="image0" src="//img-fotki.yandex.ru/get/109111/44073636.2/0_132f26_36c6aa40_L.png" style="width: 456px; height: 500px;" /></a></p>
+<p><a class="reference external" href="//img-fotki.yandex.ru/get/62989/44073636.2/0_132e3a_60635f3c_orig"><img alt="image1" src="//img-fotki.yandex.ru/get/62989/44073636.2/0_132e3a_60635f3c_L.png" style="width: 500px; height: 157px;" /></a></p>
 <p>Установить также просто на убунту 8.04 у меня не получилось. Дело в том,
 что там лежат уже старые версии библиотек, а django-gis требует более
 новые. Поэтому нужно все собирать вручную. Все не так страшно как
@@ -200,18 +191,12 @@ Could not import user-defined GEOMETRY_BACKEND &quot;geos&quot;». То есть
 надо заменить:</p>
 <p>C:\Program Files\PostgreSQL\8.3\bin; на C:\Program
 Files\PostgreSQL\8.4\bin</p>
-<div class="line-block">
-<div class="line">То есть:</div>
-<div class="line"><a class="reference external" href="http://dicos.ru/wp-content/uploads/2010/07/temporary_variable.gif"><img alt="переменные среды" class="alignnone size-medium wp-image-136" src="http://dicos.ru/wp-content/uploads/2010/07/temporary_variable-300x286.gif" style="width: 300px; height: 286px;" /></a></div>
-</div>
+<p>То есть:
+<a class="reference external" href="//img-fotki.yandex.ru/get/128901/44073636.2/0_132e3b_be06866e_orig"><img alt="image2" src="//img-fotki.yandex.ru/get/128901/44073636.2/0_132e3b_be06866e_L.gif" style="width: 500px; height: 478px;" /></a></p>
 <p>После всех этих махинаций у нас все должно работать. Если что не
 понятно, пишите на почту.</p>
-<div class="line-block">
-<div class="line">документация по установке geodjango (англ.) --
-<a class="reference external" href="http://docs.djangoproject.com/en/1.2/ref/contrib/gis/install/">http://docs.djangoproject.com/en/1.2/ref/contrib/gis/install/</a></div>
-<div class="line">оф. сайт psycopg2 --
-<a class="reference external" href="http://www.stickpeople.com/projects/python/win-psycopg/">http://www.stickpeople.com/projects/python/win-psycopg/</a></div>
-</div>
+<p>документация по установке geodjango (англ.) -- <a class="reference external" href="http://docs.djangoproject.com/en/1.2/ref/contrib/gis/install/">http://docs.djangoproject.com/en/1.2/ref/contrib/gis/install/</a>
+оф. сайт psycopg2 -- <a class="reference external" href="http://www.stickpeople.com/projects/python/win-psycopg/">http://www.stickpeople.com/projects/python/win-psycopg/</a></p>
 <div id="_mcePaste"
 style="position: absolute; left: -10000px; top: 627px; width: 1px; height: 1px; overflow-x: hidden; overflow-y: hidden; text-align: left;"><p><a class="reference external" href="http://www.google.com/search?hl=ru&amp;pwst=1&amp;&amp;sa=X&amp;ei=t88gTIucFIq6ONPN0Gs&amp;ved=0CBUQvwUoAQ&amp;q=ERROR%3A+relation+%22spatial_ref_sys%22+does+not+exist&amp;spell=1">ERROR: relation &quot;spatial_ref_sys&quot; does not
 ***exist***</a>.</p>

@@ -145,42 +145,34 @@ void OnStart()
    Print(qwe());
   }
 </pre>
-<div class="line-block">
-<div class="line">запускаем &nbsp;этот код, видим, что Metatrader показывает окно, в котором
-нужно подтвердить запуск dll файлов.</div>
-<div class="line"><a class="reference external" href="http://dicos.ru/wp-content/uploads/2014/04/076.png"><img alt="076" class="alignnone wp-image-421 size-medium" src="http://dicos.ru/wp-content/uploads/2014/04/076-300x147.png" style="width: 300px; height: 147px;" /></a></div>
-</div>
-<div class="line-block">
-<div class="line">Подтверждаем. После подтверждения видим, в фрейме
-&quot;инструменты&quot;-&gt;&quot;эксперты&quot; надпись</div>
-<div class="line">2014.04.22 16:41:57.190 simple (Si-6.14,H1) Cannot load 'C:\Program
-Files\ОТКРЫТИЕ-Брокер\MQL5\Projects\out.dll'</div>
-<div class="line"><a class="reference external" href="http://dicos.ru/wp-content/uploads/2014/04/077.png"><img alt="077" class="alignnone wp-image-423 size-medium" src="http://dicos.ru/wp-content/uploads/2014/04/077-300x84.png" style="width: 300px; height: 84px;" /></a></div>
-</div>
+<p>запускаем &nbsp;этот код, видим, что Metatrader показывает окно, в котором
+нужно подтвердить запуск dll файлов.
+<a class="reference external" href="//img-fotki.yandex.ru/get/107473/44073636.2/0_132e48_8a0c988d_orig"><img alt="076" src="//img-fotki.yandex.ru/get/151498/44073636.2/0_132e49_a71be633_orig" style="width: 300px; height: 147px;" /></a></p>
+<p>Подтверждаем. После подтверждения видим, в фрейме
+&quot;инструменты&quot;-&gt;&quot;эксперты&quot; надпись
+2014.04.22 16:41:57.190 simple (Si-6.14,H1) Cannot load 'C:\Program
+Files\ОТКРЫТИЕ-Брокер\MQL5\Projects\out.dll'
+<a class="reference external" href="//img-fotki.yandex.ru/get/41468/44073636.2/0_132e4a_e290f75b_orig"><img alt="077" src="//img-fotki.yandex.ru/get/41468/44073636.2/0_132e4a_e290f75b_orig" style="width: 300px; height: 84px;" /></a></p>
 <p>В ходе экспериментов обнаружил, что если установить не&nbsp;mingw-w64-i686 а
 более старый mingw, то скомпилированный файл метатрейдер без проблем
 подключает:</p>
 <p>Компилируем:&nbsp;i586-mingw32msvc-g++ -mrtd -shared -o out.dll simple.cpp</p>
-<div class="line-block">
-<div class="line">Запускаем в MetaEditor код, нажав на кнопку клавиатуры F5. Metatrader
-&quot;спрашивает&quot; можно или нет подключить dll файл:</div>
-<div class="line"><a class="reference external" href="http://dicos.ru/wp-content/uploads/2014/04/075.png"><img alt="075" class="alignnone size-medium wp-image-422" src="http://dicos.ru/wp-content/uploads/2014/04/075-300x148.png" style="width: 300px; height: 148px;" /></a></div>
-</div>
-<div class="line-block">
-<div class="line">Подтверждаем. После подтверждения&nbsp;&nbsp;в фрейме &quot;инструменты&quot;-&gt;&quot;эксперты&quot;
-единичку. То есть dll-ка заработала.</div>
-<div class="line"><a class="reference external" href="http://dicos.ru/wp-content/uploads/2014/04/078.png"><img alt="078" class="alignnone size-medium wp-image-424" src="http://dicos.ru/wp-content/uploads/2014/04/078-300x96.png" style="width: 300px; height: 96px;" /></a></div>
-</div>
+<p>Запускаем в MetaEditor код, нажав на кнопку клавиатуры F5. Metatrader
+&quot;спрашивает&quot; можно или нет подключить dll файл:
+<a class="reference external" href="//img-fotki.yandex.ru/get/107473/44073636.2/0_132e48_8a0c988d_orig"><img alt="075" src="//img-fotki.yandex.ru/get/107473/44073636.2/0_132e48_8a0c988d_orig" style="width: 300px; height: 148px;" /></a></p>
+<p>Подтверждаем. После подтверждения&nbsp;&nbsp;в фрейме &quot;инструменты&quot;-&gt;&quot;эксперты&quot;
+единичку. То есть dll-ка заработала.
+<a class="reference external" href="//img-fotki.yandex.ru/get/60537/44073636.2/0_132e4b_f910b026_orig"><img alt="078" src="//img-fotki.yandex.ru/get/60537/44073636.2/0_132e4b_f910b026_orig" style="width: 300px; height: 96px;" /></a></p>
 <p>Если внимательно приглядеться, то можно увидеть, что если компилируем
 при помощи&nbsp;i686-w64-mingw32-g++, то Metatrader пытается загрузить
 какую-то библиотеку&nbsp;libgcc_s_sjlj-1.dll, а
 компилятор&nbsp;i586-mingw32msvc-g++ как-то обходится без нее.</p>
-<div class="line-block">
-<div class="line">Решение проблемы нашел в интернете: нужно к компилятору добавить
+<p>Решение проблемы нашел в интернете: нужно к компилятору добавить
 параметр&nbsp;-static-libgcc. Другими словами, компилировать dll файл нужно
-так:</div>
-<div class="line">i686-w64-mingw32-g++ -static-libgcc -shared -o out.dll simple.cpp</div>
-</div>
+так:</p>
+<pre class="literal-block">
+i686-w64-mingw32-g++ -static-libgcc -shared -o out.dll simple.cpp
+</pre>
 
 
 		    <div class="tags">

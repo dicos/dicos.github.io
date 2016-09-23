@@ -113,24 +113,23 @@
 
 		<p>Когда мы используем Ext JS’а ComboBox, если мы не установили скрытое имя
 или его id, то отправляется на сервер введенное значение а не значение
-поля. Для исправления нужно установить скрытое имя. За подробностями на
-<a class="reference external" href="http://extjs.com/deploy/dev/docs/?class=Ext.form.ComboBox">Ext JS
-ComboBox’&nbsp;документацию</a>.</p>
-<div class="line-block">
-<div class="line">var unitField = new Ext.form.ComboBox({</div>
-<div class="line">id:'unitField',</div>
-<div class="line">name: 'unit',</div>
-<div class="line">fieldLabel: 'Unit',</div>
-<div class="line">store:unitStore,</div>
-<div class="line">mode: 'remote',</div>
-<div class="line">displayField: 'name',</div>
-<div class="line">valueField: 'id',</div>
-<div class="line"><strong>hiddenName : 'unitId',</strong></div>
-<div class="line">allowBlank: false,</div>
-<div class="line">anchor:'95%',</div>
-<div class="line">triggerAction: 'all'</div>
-<div class="line">});</div>
-</div>
+поля. Для исправления нужно установить скрытое имя. За подробностями на`Ext JS
+ComboBox’&nbsp;документацию <a class="reference external" href="http://extjs.com/deploy/dev/docs/?class=Ext.form.ComboBox">http://extjs.com/deploy/dev/docs/?class=Ext.form.ComboBox</a>.</p>
+<pre class="literal-block">
+var unitField = new Ext.form.ComboBox({
+    id:'unitField',
+    name: 'unit',
+    fieldLabel: 'Unit',
+    store:unitStore,
+    mode: 'remote',
+    displayField: 'name',
+    valueField: 'id',
+    hiddenName : 'unitId',
+    allowBlank: false,
+    anchor:'95%',
+    triggerAction: 'all'
+});
+</pre>
 <p>Взял
 <a class="reference external" href="http://turgaykivrak.wordpress.com/2008/05/19/extjs-20-tip-how-to-make-combobox-send-value-field/">отсюда</a></p>
 
