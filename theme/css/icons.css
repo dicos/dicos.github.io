@@ -454,9 +454,6 @@ ul.icons li [class*=" icon-"] {
 .icon-picture:before {
   content: "\f03e";
 }
-.icon-pencil:before {
-  content: "\f040";
-}
 .icon-map-marker:before {
   content: "\f041";
 }

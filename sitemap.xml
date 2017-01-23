@@ -5,14 +5,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://dicos.ru/</loc>
-<lastmod>2016-09-27T13:05:18-00:00</lastmod>
+<lastmod>2017-01-23T15:57:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://dicos.ru/archives.html</loc>
-<lastmod>2016-09-27T13:05:18-00:00</lastmod>
+<lastmod>2017-01-23T15:57:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -20,6 +20,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://dicos.ru/about.html</loc>
 <lastmod>2010-01-01T08:37:00+06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://dicos.ru/django-multidoamin-sessions.html</loc>
+<lastmod>2017-01-23T15:15:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -334,7 +341,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://dicos.ru/author/admin.html</loc>
-<lastmod>2016-09-25T21:40:00+05:32</lastmod>
+<lastmod>2017-01-23T15:15:00+05:32</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

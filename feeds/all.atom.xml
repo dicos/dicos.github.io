@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Косолапов Дмитрий: мысли умные и не только.</title><link href="http://dicos.ru/" rel="alternate"></link><link href="http://dicos.ru/feeds/all.atom.xml" rel="self"></link><id>http://dicos.ru/</id><updated>2016-09-25T21:40:00+07:00</updated><entry><title>Блог снова начал работать</title><link href="http://dicos.ru/new-blog.html" rel="alternate"></link><published>2016-09-25T21:40:00+07:00</published><updated>2016-09-25T21:40:00+07:00</updated><author><name>admin</name></author><id>tag:dicos.ru,2016-09-25:new-blog.html</id><summary type="html">&lt;p&gt;К сожалению, последняя запись в блоге датируется месяцем маем, 2014 годом. Причины:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Косолапов Дмитрий: мысли умные и не только.</title><link href="http://dicos.ru/" rel="alternate"></link><link href="http://dicos.ru/feeds/all.atom.xml" rel="self"></link><id>http://dicos.ru/</id><updated>2017-01-23T15:15:00+07:00</updated><entry><title>Мультидоменные сессии для джанго</title><link href="http://dicos.ru/django-multidoamin-sessions.html" rel="alternate"></link><published>2017-01-23T15:15:00+07:00</published><updated>2017-01-23T15:15:00+07:00</updated><author><name>admin</name></author><id>tag:dicos.ru,2017-01-23:django-multidoamin-sessions.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;1. Для чего нужно и в чем проблема&lt;/h2&gt;
+&lt;p&gt;Допустим, у нас есть интернет-магазин shop.ru. Начальство решает купить домен shop.com для выхода на международный рынок.
+В интернет-магазине есть регистрация, вход по логину-паролю. Есть много ссылок на страницы shop.ru. Допустим, посетитель
+зарегистрировался на shop.com, положил товар в корзину, потом как-то перешел на страницу shop.ru. Его корзина будет пуста
+и этому человеку заново нужно будет вводить логин и пароль. В идеале нужно, чтобы независимо с какого сайта на какой
+перешел посетитель, нужно, чтобы содержимое корзины и данные автоизации сохранились.&lt;/p&gt;
+&lt;p&gt;Проблема в том, что такая информация как авторизирован человек на сайте или нет, какие товары он положил в корзину
+хранятся в сессии. А сессия работает на файлах cookie, которые из-за политики безопасности веб-браузеров жестко привязаны
+к домену. То есть файл cookie для домена shop.ru можно получить для субдомена product.shop.ru, но нельзя для shop.com.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;2. Существующие решения&lt;/h2&gt;
+&lt;p&gt;# &lt;a class="reference external" href="https://github.com/dicos/django-xsession"&gt;django-xsession&lt;/a&gt;
+# &lt;a class="reference external" href="https://github.com/dicos/django-shared-session"&gt;django-shared-session&lt;/a&gt;&lt;/p&gt;
+&lt;div class="section" id="django-xsession"&gt;
+&lt;h3&gt;django-xsession&lt;/h3&gt;
+&lt;p&gt;Принцип этой библиотеки построен на том, что если на текущем сайте пользователь не авторизирован, а на другом
+авторизирован, то с другого сайта загружается javascript код, который создает файл cookie-сессию с таким же
+идентификатором, как на авторизированном сайте.&lt;/p&gt;
+&lt;p&gt;Из достоинства хочу отметить простоту самого модуля. Недостаток: могут быть &amp;quot;вечные&amp;quot; перезагрузки если сессия была
+как-то установлена на обоих сайтах.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="django-shared-session"&gt;
+&lt;h3&gt;django-shared-session&lt;/h3&gt;
+&lt;p&gt;Эта библиотека работает по обратному принципу: на сайте, где авторизовался пользователь загружается javascript с других
+сайтов. При этом в get запросе передается шифрованная информация о текущей сессии. Эта шифрованная информация
+расшифровывается на серверах других сайтов, и для этих сайтов устанавливается сессия.&lt;/p&gt;
+&lt;p&gt;Приятная библиотека. Работает стабильно.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Блог снова начал работать</title><link href="http://dicos.ru/new-blog.html" rel="alternate"></link><published>2016-09-25T21:40:00+07:00</published><updated>2016-09-25T21:40:00+07:00</updated><author><name>admin</name></author><id>tag:dicos.ru,2016-09-25:new-blog.html</id><summary type="html">&lt;p&gt;К сожалению, последняя запись в блоге датируется месяцем маем, 2014 годом. Причины:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;загруженность на работах: их количество варьировалось от 2 до 3-х;&lt;/li&gt;
 &lt;li&gt;переезд, связанный с приобритением квартиры, а также ремонт в ней.&lt;/li&gt;
