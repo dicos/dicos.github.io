@@ -1,3 +1,3 @@
 User-Agent: *
 Allow: /
-Sitemap: http://dicos.ru/sitemap.xml
+Sitemap: https://dicos.ru/sitemap.xml

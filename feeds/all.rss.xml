@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Косолапов Дмитрий: мысли умные и не только.</title><link>http://dicos.ru/</link><description></description><lastBuildDate>Mon, 23 Jan 2017 15:15:00 +0700</lastBuildDate><item><title>Мультидоменные сессии для джанго</title><link>http://dicos.ru/django-multidoamin-sessions.html</link><description>&lt;div class="section" id="id2"&gt;
+<rss version="2.0"><channel><title>Косолапов Дмитрий: мысли умные и не только.</title><link>https://dicos.ru/</link><description></description><lastBuildDate>Mon, 23 Jan 2017 15:15:00 +0700</lastBuildDate><item><title>Мультидоменные сессии для джанго</title><link>https://dicos.ru/django-multidoamin-sessions.html</link><description>&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;1. Для чего нужно и в чем проблема&lt;/h2&gt;
 &lt;p&gt;Допустим, у нас есть интернет-магазин shop.ru. Начальство решает купить домен shop.com для выхода на международный рынок.
 В интернет-магазине есть регистрация, вход по логину-паролю. Есть много ссылок на страницы shop.ru. Допустим, посетитель
@@ -30,7 +30,7 @@
 &lt;p&gt;Приятная библиотека. Работает стабильно.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 23 Jan 2017 15:15:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2017-01-23:django-multidoamin-sessions.html</guid></item><item><title>Блог снова начал работать</title><link>http://dicos.ru/new-blog.html</link><description>&lt;p&gt;К сожалению, последняя запись в блоге датируется месяцем маем, 2014 годом. Причины:&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 23 Jan 2017 15:15:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2017-01-23:django-multidoamin-sessions.html</guid></item><item><title>Блог снова начал работать</title><link>https://dicos.ru/new-blog.html</link><description>&lt;p&gt;К сожалению, последняя запись в блоге датируется месяцем маем, 2014 годом. Причины:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;загруженность на работах: их количество варьировалось от 2 до 3-х;&lt;/li&gt;
 &lt;li&gt;переезд, связанный с приобритением квартиры, а также ремонт в ней.&lt;/li&gt;
@@ -76,7 +76,7 @@
 &lt;li&gt;Дизай блога: &lt;a class="reference external" href="https://github.com/dicos/nice-blog"&gt;https://github.com/dicos/nice-blog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 25 Sep 2016 21:40:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2016-09-25:new-blog.html</guid></item><item><title>Еще один проект по торговле акциями и фьючерсами</title><link>http://dicos.ru/new-project.html</link><description>&lt;p&gt;Сегодня опубликовал
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 25 Sep 2016 21:40:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2016-09-25:new-blog.html</guid></item><item><title>Еще один проект по торговле акциями и фьючерсами</title><link>https://dicos.ru/new-project.html</link><description>&lt;p&gt;Сегодня опубликовал
 &lt;a class="reference external" href="https://bitbucket.org/dicos/moving-average"&gt;проект&lt;/a&gt;, над которым
 работал прошлый год. Он должен был меня озолотить, но не получилось. А
 так как не получилось, то пусть поваляется в общем доступе (на тебе боже
@@ -86,7 +86,7 @@
 TA-Lib, пример торговли в терминале MetaTrader 5.&lt;/p&gt;
 &lt;p&gt;Сейчас начал осваивать японские свечи. Если и с ними не получится --
 выложу в открытый доступ, не работающее мне не жалко.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 19 May 2014 11:32:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2014-05-19:new-project.html</guid></item><item><title>dll для MetaTrader 5 в linux</title><link>http://dicos.ru/dll-for-metatrader-5-linux.html</link><description>&lt;p&gt;Уже как месяц изучаю платформу для торговли ценными бумагами MetaTrader
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 19 May 2014 11:32:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2014-05-19:new-project.html</guid></item><item><title>dll для MetaTrader 5 в linux</title><link>https://dicos.ru/dll-for-metatrader-5-linux.html</link><description>&lt;p&gt;Уже как месяц изучаю платформу для торговли ценными бумагами MetaTrader
 5. В планах у меня стоит написать до лета торговую систему, которая
 будет торговать, торговать, торговать и к Новому Году я стану
 миллионером. :-)&lt;/p&gt;
@@ -145,7 +145,7 @@ Files\ОТКРЫТИЕ-Брокер\MQL5\Projects\out.dll'
 &lt;pre class="literal-block"&gt;
 i686-w64-mingw32-g++ -static-libgcc -shared -o out.dll simple.cpp
 &lt;/pre&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Tue, 22 Apr 2014 17:02:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2014-04-22:dll-for-metatrader-5-linux.html</guid><category>C</category><category>metatrader</category><category>wine</category></item><item><title>AttributeError: 'module' object has no attribute 'Migration'</title><link>http://dicos.ru/attributeerror-module-object-has-no-attribute-migration.html</link><description>&lt;p&gt;В проекте, над которым сейчас работаю, используется south -- стороннее
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Tue, 22 Apr 2014 17:02:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2014-04-22:dll-for-metatrader-5-linux.html</guid><category>C</category><category>metatrader</category><category>wine</category></item><item><title>AttributeError: 'module' object has no attribute 'Migration'</title><link>https://dicos.ru/attributeerror-module-object-has-no-attribute-migration.html</link><description>&lt;p&gt;В проекте, над которым сейчас работаю, используется south -- стороннее
 &amp;nbsp;приложение для фреймворка джанго. Суть в следующем: в джанге есть
 библиотека для работы с базами данных. Работа с базой данных
 осуществляется через специальные классы-модели, которые пишет сам
@@ -211,18 +211,18 @@ line 310, in migration_class&lt;/div&gt;
 сайта, файлы миграций были пустые. Пришлось просто удалить пустые файлы
 и заново инициализировать миграции. После этого, мое изменение в базе
 данных прошло успешно.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sat, 12 Jan 2013 14:11:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2013-01-12:attributeerror-module-object-has-no-attribute-migration.html</guid></item><item><title>Включить scroll lock при переключении раскладки</title><link>http://dicos.ru/enable-scroll-lock.html</link><description>&lt;p&gt;Собственно, через настройку системы клавиатура -&amp;gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sat, 12 Jan 2013 14:11:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2013-01-12:attributeerror-module-object-has-no-attribute-migration.html</guid></item><item><title>Включить scroll lock при переключении раскладки</title><link>https://dicos.ru/enable-scroll-lock.html</link><description>&lt;p&gt;Собственно, через настройку системы клавиатура -&amp;gt;
 параметры-&amp;gt;использовать клавиатурные индикаторы для отображения
 дополнительных раскладок&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="//img-fotki.yandex.ru/get/142729/44073636.2/0_132e47_2736ceac_orig"&gt;&lt;img alt="image" src="//img-fotki.yandex.ru/get/142729/44073636.2/0_132e47_2736ceac_L.png" style="width: 500px; height: 500px;" /&gt;&lt;/a&gt;&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Wed, 14 Nov 2012 08:40:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2012-11-14:enable-scroll-lock.html</guid></item><item><title>Список портов TCP/UDP</title><link>http://dicos.ru/list-of-ports-tcpudp.html</link><description>&lt;p&gt;Часто, при анализе сетевой активности приходится разбираться что за
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Wed, 14 Nov 2012 08:40:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2012-11-14:enable-scroll-lock.html</guid></item><item><title>Список портов TCP/UDP</title><link>https://dicos.ru/list-of-ports-tcpudp.html</link><description>&lt;p&gt;Часто, при анализе сетевой активности приходится разбираться что за
 трафик и кто его создает. С вероятностью 80% &amp;quot;генератор&amp;quot;&amp;nbsp;трафика можно
 определить по порту. Часто приходилось лезть в интернет и просматривать
 кучу форумов, чтобы определить кто и что решило пол-интернета скачать.
 Писатели википедии постарались и выложили готовый &lt;a class="reference external" href="http://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BF%D0%BE%D1%80%D1%82%D0%BE%D0%B2_TCP_%D0%B8_UDP"&gt;список
 портов&lt;/a&gt;
 с описанием.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sat, 25 Aug 2012 12:11:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2012-08-25:list-of-ports-tcpudp.html</guid></item><item><title>К PEP 8!</title><link>http://dicos.ru/go-to-pep-8.html</link><description>&lt;p&gt;&lt;a class="reference external" href="http://www.python.org/dev/peps/pep-0008/"&gt;PEP 8&lt;/a&gt; это стандарт
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sat, 25 Aug 2012 12:11:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2012-08-25:list-of-ports-tcpudp.html</guid></item><item><title>К PEP 8!</title><link>https://dicos.ru/go-to-pep-8.html</link><description>&lt;p&gt;&lt;a class="reference external" href="http://www.python.org/dev/peps/pep-0008/"&gt;PEP 8&lt;/a&gt; это стандарт
 форматирования кода языка питон.&lt;/p&gt;
 &lt;p&gt;Придерживаться его желательно, так как во многих случаях код становится
 более понятным (и более простым!). Так сложилось, что сам (каюсь-каюсь)
@@ -242,7 +242,7 @@ line 310, in migration_class&lt;/div&gt;
 Не умеет только обрабатывать ошибки в длине строки (длина строки должна
 быть 79 символов.) Я работал так:&amp;nbsp;autopep8 &amp;lt;текущий_файл&amp;gt; &amp;gt;
 &amp;lt;новый_файл&amp;gt; . А дальше сравнивал и искал где у меня ошибки.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Fri, 20 Apr 2012 23:58:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2012-04-20:go-to-pep-8.html</guid></item><item><title>Новый вид спама в мессенжерах</title><link>http://dicos.ru/new-type-spam.html</link><description>&lt;p&gt;Примерно с неделю назад каждые 3 дня через мейл.агент начали мне писать
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Fri, 20 Apr 2012 23:58:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2012-04-20:go-to-pep-8.html</guid></item><item><title>Новый вид спама в мессенжерах</title><link>https://dicos.ru/new-type-spam.html</link><description>&lt;p&gt;Примерно с неделю назад каждые 3 дня через мейл.агент начали мне писать
 девушки. Незнакомые. В этом плохого ни чего нет, наоборот, приятно :-).
 Первые 3 минуты. Затем, понимаешь, что собеседница отвечает немного
 невпопад. А в самом конце разговора говорит, что надо идти работать и
@@ -331,7 +331,7 @@ line 310, in migration_class&lt;/div&gt;
 диалоге с жертвой.&lt;/p&gt;
 &lt;p&gt;Единственный способ отличить человека от бота, это спросить его. Я
 спрашиваю название красной планеты нашей солнечной системы.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Wed, 18 Jan 2012 14:14:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2012-01-18:new-type-spam.html</guid></item><item><title>Добавить rowspan, colspan в таблицу Reportlab</title><link>http://dicos.ru/add-rowspan-colspan-in-table-reportlab.html</link><description>&lt;p&gt;&lt;a class="reference external" href="http://www.reportlab.com/"&gt;Reportlab&lt;/a&gt; -- это библиотека для
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Wed, 18 Jan 2012 14:14:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2012-01-18:new-type-spam.html</guid></item><item><title>Добавить rowspan, colspan в таблицу Reportlab</title><link>https://dicos.ru/add-rowspan-colspan-in-table-reportlab.html</link><description>&lt;p&gt;&lt;a class="reference external" href="http://www.reportlab.com/"&gt;Reportlab&lt;/a&gt; -- это библиотека для
 генерации pdf документов. Мне нужно было создать таблицу, несколько
 колонок которой были&amp;nbsp;объединены. Гугл вразумительного ответа не смог
 дать, поэтому стал читать официальную документацию. Действительно, на 77
@@ -380,10 +380,10 @@ t = Table(data, style=[
 &lt;td&gt;32&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Tue, 03 Jan 2012 13:48:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2012-01-03:add-rowspan-colspan-in-table-reportlab.html</guid></item><item><title>Полезные ссылки</title><link>http://dicos.ru/good-links.html</link><description>&lt;p&gt;&lt;a class="reference external" href="http://www.network-theory.co.uk/docs/pytut/"&gt;http://www.network-theory.co.uk/docs/pytut/&lt;/a&gt;&amp;nbsp;-- краткий справочник по
+&lt;/table&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Tue, 03 Jan 2012 13:48:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2012-01-03:add-rowspan-colspan-in-table-reportlab.html</guid></item><item><title>Полезные ссылки</title><link>https://dicos.ru/good-links.html</link><description>&lt;p&gt;&lt;a class="reference external" href="http://www.network-theory.co.uk/docs/pytut/"&gt;http://www.network-theory.co.uk/docs/pytut/&lt;/a&gt;&amp;nbsp;-- краткий справочник по
 базовым инструкциям и функциям. Такой же
 как&amp;nbsp;&lt;a class="reference external" href="http://docs.python.org/library/"&gt;http://docs.python.org/library/&lt;/a&gt;, только гораздо понятнее написано.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Wed, 28 Dec 2011 20:42:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-12-28:good-links.html</guid></item><item><title>Линус Торнвальдс о C++</title><link>http://dicos.ru/linus-tornvalds-about-c.html</link><description>&lt;p&gt;&lt;a class="reference external" href="http://article.gmane.org/gmane.comp.version-control.git/57918"&gt;http://article.gmane.org/gmane.comp.version-control.git/57918&lt;/a&gt;&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Wed, 28 Dec 2011 20:42:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-12-28:good-links.html</guid></item><item><title>Линус Торнвальдс о C++</title><link>https://dicos.ru/linus-tornvalds-about-c.html</link><description>&lt;p&gt;&lt;a class="reference external" href="http://article.gmane.org/gmane.comp.version-control.git/57918"&gt;http://article.gmane.org/gmane.comp.version-control.git/57918&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;На странице&amp;nbsp;опубликован&amp;nbsp;ответ почему git написан на C а не на C++.
 Переводить полностью мне лень, поэтому напишу тезисы:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -393,7 +393,7 @@ t = Table(data, style=[
 платформе i386, i486, ARM и т.д.);&lt;/li&gt;
 &lt;li&gt;и сложен;&lt;/li&gt;
 &lt;/ul&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Thu, 03 Nov 2011 22:02:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-11-03:linus-tornvalds-about-c.html</guid></item><item><title>Установка PIL с поддержкой jpeg и freetype в virtualenv</title><link>http://dicos.ru/setup-pil-with-support-jpeg-and-freetype-in-virtualenv.html</link><description>&lt;p&gt;Столкнулся с такой проблемой: даже если установлены пакеты&amp;nbsp;libjpeg
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Thu, 03 Nov 2011 22:02:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-11-03:linus-tornvalds-about-c.html</guid></item><item><title>Установка PIL с поддержкой jpeg и freetype в virtualenv</title><link>https://dicos.ru/setup-pil-with-support-jpeg-and-freetype-in-virtualenv.html</link><description>&lt;p&gt;Столкнулся с такой проблемой: даже если установлены пакеты&amp;nbsp;libjpeg
 и&amp;nbsp;libfreetype6-dev в конце компиляции PIL пишет такое безобразие:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;div class="line-block"&gt;
@@ -428,7 +428,7 @@ pip install pil&lt;/p&gt;
 &lt;li&gt;закрываем редактор и после этого выполняем команду&amp;nbsp;'pip install -I
 pil --no-download'&lt;/li&gt;
 &lt;/ol&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Fri, 08 Jul 2011 22:29:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-07-08:setup-pil-with-support-jpeg-and-freetype-in-virtualenv.html</guid></item><item><title>Замена текста во многих файлах</title><link>http://dicos.ru/replace-text-in-many-files.html</link><description>&lt;p&gt;Иногда требуется заменить текст на другой текст в нескольких файлах.
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Fri, 08 Jul 2011 22:29:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-07-08:setup-pil-with-support-jpeg-and-freetype-in-virtualenv.html</guid></item><item><title>Замена текста во многих файлах</title><link>https://dicos.ru/replace-text-in-many-files.html</link><description>&lt;p&gt;Иногда требуется заменить текст на другой текст в нескольких файлах.
 Чтобы делать это автоматически использую такой скрипт:&lt;/p&gt;
 &lt;blockquote&gt;
 find . -name \*html -print0 | xargs -0 sed
@@ -437,7 +437,7 @@ find . -name \*html -print0 | xargs -0 sed
 и заменяет фразу&amp;nbsp;some_text на&amp;nbsp;new_text.&lt;/p&gt;
 &lt;p&gt;Эту штуку написал некто Liz с конференции &lt;a class="reference external" href="mailto:linux&amp;#64;conference.jabber.ru"&gt;linux&amp;#64;conference.jabber.ru&lt;/a&gt;.
 Спасибо ему огромное.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Fri, 08 Jul 2011 22:04:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-07-08:replace-text-in-many-files.html</guid></item><item><title>Установка egenix-mx-base под virtualenv</title><link>http://dicos.ru/setup-egenix-mx-base-on-virtualenv.html</link><description>&lt;p&gt;Несколько человек, в том числе и я столкнулись с проблемой, когда из-под
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Fri, 08 Jul 2011 22:04:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-07-08:replace-text-in-many-files.html</guid></item><item><title>Установка egenix-mx-base под virtualenv</title><link>https://dicos.ru/setup-egenix-mx-base-on-virtualenv.html</link><description>&lt;p&gt;Несколько человек, в том числе и я столкнулись с проблемой, когда из-под
 виртуальной среды невозможно установить модуль&amp;nbsp;egenix-mx-base.&lt;/p&gt;
 &lt;p&gt;Установка через pip оканчивалась неудачей:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -530,7 +530,7 @@ egenix-mx-base&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Сайт разработчика:&amp;nbsp;&lt;a class="reference external" href="http://www.egenix.com/products/python/mxBase/"&gt;http://www.egenix.com/products/python/mxBase/&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Wed, 22 Jun 2011 14:28:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-06-22:setup-egenix-mx-base-on-virtualenv.html</guid></item><item><title>Субдомены в django</title><link>http://dicos.ru/subdomains-in-django.html</link><description>&lt;p&gt;На сайте &lt;a class="reference external" href="http://on-day.ry/"&gt;on-day.ru&lt;/a&gt;, понадобилось реализовать
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Wed, 22 Jun 2011 14:28:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-06-22:setup-egenix-mx-base-on-virtualenv.html</guid></item><item><title>Субдомены в django</title><link>https://dicos.ru/subdomains-in-django.html</link><description>&lt;p&gt;На сайте &lt;a class="reference external" href="http://on-day.ry/"&gt;on-day.ru&lt;/a&gt;, понадобилось реализовать
 такую штуку: каждый город должен находиться на своем субдомене.
 Полезность этого нововведения пусть оценивает СЕО специалист (привет,
 Евгений!), тут опишу техническую сторону вопроса.&lt;/p&gt;
@@ -611,14 +611,14 @@ debug_toolbar.middleware.DebugToolbarMiddleware.&amp;nbsp;Об этом пове
 &lt;a class="reference external" href="https://github.com/jezdez/django-hosts/issues/3"&gt;отписался&lt;/a&gt; на своем
 недоанглийском разработчику. Если кто владеет английским гораздо лучше
 меня и объяснит автору что я имел ввиду, то буду очень признателен&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Thu, 16 Jun 2011 16:33:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-06-16:subdomains-in-django.html</guid></item><item><title>Русские буквы в zip архивах, Ubuntu</title><link>http://dicos.ru/russian-characters-in-zip-archive.html</link><description>&lt;p&gt;Нужно установить доработанную версию архиватора zip.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Thu, 16 Jun 2011 16:33:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-06-16:subdomains-in-django.html</guid></item><item><title>Русские буквы в zip архивах, Ubuntu</title><link>https://dicos.ru/russian-characters-in-zip-archive.html</link><description>&lt;p&gt;Нужно установить доработанную версию архиватора zip.&lt;/p&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;Для начала нужно добавить репозиторий sudo apt-add-repository
 ppa:frol/zip-i18n&lt;/div&gt;
 &lt;div class="line"&gt;Потом сделать обновление системы sudo aptitude update &amp;amp;&amp;amp; sudo aptitude
 safe-upgrade&lt;/div&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Tue, 10 May 2011 19:35:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-05-10:russian-characters-in-zip-archive.html</guid></item><item><title>Как сделать свою википедию</title><link>http://dicos.ru/ones-own-wikipedia.html</link><description>&lt;p&gt;Моим недавним заказом было создание сайта на основе движка
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Tue, 10 May 2011 19:35:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-05-10:russian-characters-in-zip-archive.html</guid></item><item><title>Как сделать свою википедию</title><link>https://dicos.ru/ones-own-wikipedia.html</link><description>&lt;p&gt;Моим недавним заказом было создание сайта на основе движка
 &lt;a class="reference external" href="http://www.mediawiki.org/"&gt;mediawiki&lt;/a&gt;. Какие задачи стояли:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;вставлять description, keywords в страницу;&lt;/li&gt;
@@ -636,7 +636,7 @@ safe-upgrade&lt;/div&gt;
 оказывался внутри тега body а не head). Решение оказалось самое простое:
 открыть MetaKeywordsTag.php, заменить внутри него слова keywords на
 description. Вот готовый
-&lt;a class="reference external" href="http://dicos.ru/wp-content/uploads/2011/03/MetaDescriptionTag.php_.tar"&gt;результат&lt;/a&gt;.&lt;/p&gt;
+&lt;a class="reference external" href="https://dicos.ru/wp-content/uploads/2011/03/MetaDescriptionTag.php_.tar"&gt;результат&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Чтобы вставлять видео с ютуба, нужно установить
 модуль&amp;nbsp;&lt;a class="reference external" href="http://www.mediawiki.org/wiki/Extension:EmbedVideo"&gt;EmbedVideo&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Расширения, нужное для вставки title, в текущей стабильной версии нет
@@ -648,7 +648,7 @@ description. Вот готовый
 Пример карточки можно увидеть на странице с описанием
 &lt;a class="reference external" href="http://ru.wikipedia.org/wiki/%D0%90%D0%9A-47"&gt;АК-47&lt;/a&gt;, она находится
 справа.&lt;/p&gt;
-&lt;p&gt;Подробнее хотел бы остановиться на яндекс картах. Для начала &lt;a class="reference external" href="http://dicos.ru/wp-content/uploads/2011/03/YandexMap.php_.tar"&gt;скачайте
+&lt;p&gt;Подробнее хотел бы остановиться на яндекс картах. Для начала &lt;a class="reference external" href="https://dicos.ru/wp-content/uploads/2011/03/YandexMap.php_.tar"&gt;скачайте
 файл&lt;/a&gt;
 и распакуйте его в каталог extensions. Потом откройте файл
 LocalSettings.php и добавьте такие строки:&lt;/p&gt;
@@ -660,7 +660,7 @@ LocalSettings.php и добавьте такие строки:&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Если кто не знает, ключ можно получить только зарегистрировавшись на
 яндексе на этой странице&amp;nbsp;&lt;a class="reference external" href="http://api.yandex.ru/maps/keyslist.xml"&gt;http://api.yandex.ru/maps/keyslist.xml&lt;/a&gt;&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 13 Mar 2011 12:39:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-03-13:ones-own-wikipedia.html</guid></item><item><title>Как подключить к virtualbox-у флешку</title><link>http://dicos.ru/how-to-enable-flash-dirver-to-virtualbox.html</link><description>&lt;p&gt;Небольшая предыстория: часто использую virtualbox для запуска windows из
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 13 Mar 2011 12:39:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-03-13:ones-own-wikipedia.html</guid></item><item><title>Как подключить к virtualbox-у флешку</title><link>https://dicos.ru/how-to-enable-flash-dirver-to-virtualbox.html</link><description>&lt;p&gt;Небольшая предыстория: часто использую virtualbox для запуска windows из
 под убунты. Для создания ключей рутокинга нужно было дать прямой доступ
 к флешке гостевой системе windows&lt;/p&gt;
 &lt;p&gt;Поставляемый дистрибутив virtualbox-а, самой убунтой, так называемый
@@ -680,7 +680,7 @@ Pack&amp;quot;. На скачавшийся файл нажимаем 2 раза
 группу vboxusers. Сделал это такой командой:&lt;/p&gt;
 &lt;blockquote&gt;
 sudo usermod -G vboxusers мой_юзер&lt;/blockquote&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 30 Jan 2011 21:58:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-01-30:how-to-enable-flash-dirver-to-virtualbox.html</guid></item><item><title>Подключаем google maps</title><link>http://dicos.ru/setup-google-maps.html</link><description>&lt;p&gt;Нашел небольшую ошибку в документации:&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 30 Jan 2011 21:58:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-01-30:how-to-enable-flash-dirver-to-virtualbox.html</guid></item><item><title>Подключаем google maps</title><link>https://dicos.ru/setup-google-maps.html</link><description>&lt;p&gt;Нашел небольшую ошибку в документации:&lt;/p&gt;
 &lt;div&gt;&lt;p&gt;написано: &amp;lt;script
 src=&amp;quot;&lt;a class="reference external" href="http://maps.google.com/maps?file=api&amp;amp;amp;v=2&amp;amp;amp;sensor=true_or_false&amp;amp;amp;key=ABQIAAAA"&gt;http://maps.google.com/maps?file=api&amp;amp;amp;v=2&amp;amp;amp;sensor=true_or_false&amp;amp;amp;key=ABQIAAAA&lt;/a&gt;
 WAv1xvwwC6CWojach1uhjRRTECATYhurY4IdD6DIW2V
@@ -689,13 +689,13 @@ _sAdH0BSMmf2Kw38QhOD4zVRxXc4DatAwMg&amp;quot; type=&amp;quot;text/javascript&amp
 src=&amp;quot;&lt;a class="reference external" href="http://maps.google.com/maps/api/js?sensor=true&amp;amp;key=ABQIAAAAWA"&gt;http://maps.google.com/maps/api/js?sensor=true&amp;amp;key=ABQIAAAAWA&lt;/a&gt;
 v1xvwwC6CWojach1uhjRRTECATYhurY4IdD6DIW2V_sAdH0BS
 Mmf2Kw38QhOD4zVRxXc4DatAwMg&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/p&gt;
-&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 02 Jan 2011 14:03:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-01-02:setup-google-maps.html</guid></item><item><title>Перенос postgis базы данных на другой сервер</title><link>http://dicos.ru/migrate-postgis-database.html</link><description>&lt;p&gt;Начав востанавливать базу данных из бекапа увидел на экране кучу ошибок.
+&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 02 Jan 2011 14:03:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-01-02:setup-google-maps.html</guid></item><item><title>Перенос postgis базы данных на другой сервер</title><link>https://dicos.ru/migrate-postgis-database.html</link><description>&lt;p&gt;Начав востанавливать базу данных из бекапа увидел на экране кучу ошибок.
 Причиной ошибок оказался неподключенный к восстанавливаемой базе данных
 plpgsql язык программирования. Подключить его можно командой из bash
 консоли:&lt;/p&gt;
 &lt;blockquote&gt;
 createlang plpgsql you_database&lt;/blockquote&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 02 Jan 2011 13:53:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-01-02:migrate-postgis-database.html</guid></item><item><title>Настройка IP телевидения от "Электронного Города"</title><link>http://dicos.ru/setup-ip-tv-from-cn.html</link><description>&lt;p&gt;У нас имеется шлюз, раздающий интернет. В качестве шлюза был взят
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 02 Jan 2011 13:53:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-01-02:migrate-postgis-database.html</guid></item><item><title>Настройка IP телевидения от "Электронного Города"</title><link>https://dicos.ru/setup-ip-tv-from-cn.html</link><description>&lt;p&gt;У нас имеется шлюз, раздающий интернет. В качестве шлюза был взят
 немного устаревший компьютер, в качестве ОС установлена убунта 10.10.
 Чтобы избежать недомолвок сообщаю, о том, что интернет этот компьютер
 уже разадавал&lt;/p&gt;
@@ -807,11 +807,11 @@ eth1 -- интерфейс, в котором &amp;quot;воткнута&amp;quo
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Тогда в файле&amp;nbsp;/usr/local/etc/igmpproxy.conf дописываем появившийся ip адрес:&amp;nbsp;altnet 239.0.0.0/8 ко всем прочим&amp;nbsp;altnet-ам&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 02 Jan 2011 13:21:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-01-02:setup-ip-tv-from-cn.html</guid></item><item><title>Как перенести кнопку закрытия вправо</title><link>http://dicos.ru/how-to-close-button-right.html</link><description>&lt;p&gt;Для этого в консоли нужно выполнить команду&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 02 Jan 2011 13:21:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2011-01-02:setup-ip-tv-from-cn.html</guid></item><item><title>Как перенести кнопку закрытия вправо</title><link>https://dicos.ru/how-to-close-button-right.html</link><description>&lt;p&gt;Для этого в консоли нужно выполнить команду&lt;/p&gt;
 &lt;blockquote&gt;
 gconftool-2 --type string --set
 /apps/metacity/general/button_layout 'menu:minimize,maximize,close'&lt;/blockquote&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 06 Dec 2010 12:03:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-12-06:how-to-close-button-right.html</guid></item><item><title>Как отправить значение из списка в combobox</title><link>http://dicos.ru/how-to-make-combobox-send-value-field.html</link><description>&lt;p&gt;Когда мы используем Ext JS’а ComboBox, если мы не установили скрытое имя
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 06 Dec 2010 12:03:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-12-06:how-to-close-button-right.html</guid></item><item><title>Как отправить значение из списка в combobox</title><link>https://dicos.ru/how-to-make-combobox-send-value-field.html</link><description>&lt;p&gt;Когда мы используем Ext JS’а ComboBox, если мы не установили скрытое имя
 или его id, то отправляется на сервер введенное значение а не значение
 поля. Для исправления нужно установить скрытое имя. За подробностями на`Ext JS
 ComboBox’&amp;nbsp;документацию &lt;a class="reference external" href="http://extjs.com/deploy/dev/docs/?class=Ext.form.ComboBox"&gt;http://extjs.com/deploy/dev/docs/?class=Ext.form.ComboBox&lt;/a&gt;.&lt;/p&gt;
@@ -832,9 +832,9 @@ var unitField = new Ext.form.ComboBox({
 &lt;/pre&gt;
 &lt;p&gt;Взял
 &lt;a class="reference external" href="http://turgaykivrak.wordpress.com/2008/05/19/extjs-20-tip-how-to-make-combobox-send-value-field/"&gt;отсюда&lt;/a&gt;&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Fri, 12 Nov 2010 14:19:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-11-12:how-to-make-combobox-send-value-field.html</guid></item><item><title>Скачать убунту с яндекса</title><link>http://dicos.ru/download-ubuntu-from-yandex.html</link><description>&lt;p&gt;Скачать любую версию убунты с яндекса можно тут:
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Fri, 12 Nov 2010 14:19:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-11-12:how-to-make-combobox-send-value-field.html</guid></item><item><title>Скачать убунту с яндекса</title><link>https://dicos.ru/download-ubuntu-from-yandex.html</link><description>&lt;p&gt;Скачать любую версию убунты с яндекса можно тут:
 &lt;a class="reference external" href="http://mirror.yandex.ru/ubuntu-releases/"&gt;http://mirror.yandex.ru/ubuntu-releases/&lt;/a&gt;&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Fri, 12 Nov 2010 10:08:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-11-12:download-ubuntu-from-yandex.html</guid></item><item><title>"GET /resources/images/default/s.gif HTTP/1.1" 404</title><link>http://dicos.ru/s-gif-404.html</link><description>&lt;div class="line-block"&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Fri, 12 Nov 2010 10:08:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-11-12:download-ubuntu-from-yandex.html</guid></item><item><title>"GET /resources/images/default/s.gif HTTP/1.1" 404</title><link>https://dicos.ru/s-gif-404.html</link><description>&lt;div class="line-block"&gt;
 &lt;div class="line"&gt;Сегодня столкнулся в ExtJs с такой проблемой: одна из картинок для
 создания элемента формы combobox не могла загрузиться:&lt;/div&gt;
 &lt;div class="line"&gt;&amp;quot;GET /resources/images/default/s.gif HTTP/1.1&amp;quot; 404&lt;/div&gt;
@@ -845,7 +845,7 @@ Ext.BLANK_IMAGE_URL = 'путь_до_файла/s.gif';&lt;/div&gt;
 &lt;div class="line"&gt;К примеру, у меня полный путь такой: Ext.BLANK_IMAGE_URL =
 '/media/extjs/resources/images/default/s.gif';&lt;/div&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 01 Nov 2010 14:59:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-11-01:s-gif-404.html</guid></item><item><title>идеальная CMS, смотрим что есть сейчас</title><link>http://dicos.ru/ideal-cms-1.html</link><description>&lt;p&gt;Не так давно нужно было быстро сделать сайт-визитку. Там должен был
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 01 Nov 2010 14:59:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-11-01:s-gif-404.html</guid></item><item><title>идеальная CMS, смотрим что есть сейчас</title><link>https://dicos.ru/ideal-cms-1.html</link><description>&lt;p&gt;Не так давно нужно было быстро сделать сайт-визитку. Там должен был
 размещаться только текст с картинками. Админка должна быть &lt;em&gt;удобной&lt;/em&gt; для
 работы.&lt;/p&gt;
 &lt;p&gt;В мире РНР много уже готовых решений, в которых пользователь чувствует
@@ -903,7 +903,7 @@ CMS-ок&amp;nbsp;&lt;a class="reference external" href="http://php.opensourcecm
 &lt;p&gt;Но самым вкусным считаю следующее: если нужно в тексте поставить ссылку
 на другую страницу сайта, то просто пишем [~id~], где id это числовой
 идентификатор страницы.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Tue, 26 Oct 2010 16:58:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-10-26:ideal-cms-1.html</guid></item><item><title>Вечно забываю</title><link>http://dicos.ru/file-and-folder-permission.html</link><description>&lt;p&gt;Как установить права доступа на запись в папку и на все подпапки и
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Tue, 26 Oct 2010 16:58:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-10-26:ideal-cms-1.html</guid></item><item><title>Вечно забываю</title><link>https://dicos.ru/file-and-folder-permission.html</link><description>&lt;p&gt;Как установить права доступа на запись в папку и на все подпапки и
 файлы:&lt;/p&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;strong&gt;chmod -R 755 /home/vasya&lt;/strong&gt;&lt;/div&gt;
@@ -930,7 +930,7 @@ vasya&lt;/div&gt;
 &lt;div class="line"&gt;поменяет владельца и группу каталога vasya и содержимое онного!&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Взял отсюда:&amp;nbsp;&lt;a class="reference external" href="http://www.woodwolf.ru/76/"&gt;http://www.woodwolf.ru/76/&lt;/a&gt;&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 25 Oct 2010 22:49:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-10-25:file-and-folder-permission.html</guid></item><item><title>Сетевая папка в контроллере домена windows 2003</title><link>http://dicos.ru/shared-folder-in-active-directory.html</link><description>&lt;p&gt;Задача такова: на сервере, который является контроллером домена нужно
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 25 Oct 2010 22:49:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-10-25:file-and-folder-permission.html</guid></item><item><title>Сетевая папка в контроллере домена windows 2003</title><link>https://dicos.ru/shared-folder-in-active-directory.html</link><description>&lt;p&gt;Задача такова: на сервере, который является контроллером домена нужно
 сделать сетевую папку, доступ к которой должен осуществляться по логину
 и паролю.&lt;/p&gt;
 &lt;p&gt;Решение этой задачи очень простое, но мне пришлось изрядно повозиться.
@@ -957,7 +957,7 @@ vasya&lt;/div&gt;
 username=dmitry,password=123123,file_mode=0666,dir_mode=0777 . Если
 необходимо, установите поддержку сетевой файловой системы командой sudo
 apt-get install smbfs .&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 20 Sep 2010 15:21:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-09-20:shared-folder-in-active-directory.html</guid></item><item><title>Что такое django gis</title><link>http://dicos.ru/what-is-django-gis.html</link><description>&lt;p&gt;django gis это такой компонент джанги, который позволяет работать с
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 20 Sep 2010 15:21:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-09-20:shared-folder-in-active-directory.html</guid></item><item><title>Что такое django gis</title><link>https://dicos.ru/what-is-django-gis.html</link><description>&lt;p&gt;django gis это такой компонент джанги, который позволяет работать с
 картографическими объектами. То есть вместо картографических примитивов
 наподобие &amp;quot;граница&amp;quot;, &amp;quot;дерево&amp;quot;, &amp;quot;дорога&amp;quot; есть многоугольник, точка,
 (мульти-)линия. С такими объектами очень легко работать, например, нужно
@@ -986,12 +986,12 @@ apt-get install smbfs .&lt;/p&gt;
 Все системы управления базами данных имеют свои
 &lt;a class="reference external" href="http://docs.djangoproject.com/en/dev/ref/contrib/gis/db-api/#compatibility-tables"&gt;ограничения&lt;/a&gt;,
 которые также нужно учитывать при разработке.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Wed, 25 Aug 2010 11:31:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-08-25:what-is-django-gis.html</guid></item><item><title>mail.agent в pidgin-e</title><link>http://dicos.ru/mail-agent-in-pidgin.html</link><description>&lt;p&gt;Способ как подключить mail.Агент к pidgin-у.
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Wed, 25 Aug 2010 11:31:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-08-25:what-is-django-gis.html</guid></item><item><title>mail.agent в pidgin-e</title><link>https://dicos.ru/mail-agent-in-pidgin.html</link><description>&lt;p&gt;Способ как подключить mail.Агент к pidgin-у.
 &lt;a class="reference external" href="http://z00lus.blogspot.com/2009/09/pidgin-mailru-agent.html"&gt;http://z00lus.blogspot.com/2009/09/pidgin-mailru-agent.html&lt;/a&gt;. Для
 подключения нужно иметь аккаунт на
 &lt;a class="reference external" href="http://www.jabber.ru/"&gt;jabber.ru&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Теперь я буду знать о том, что ко мне пришло письмо гораздо быстрее.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 26 Jul 2010 21:11:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-07-26:mail-agent-in-pidgin.html</guid></item><item><title>Ошибка в django-gis</title><link>http://dicos.ru/cannot-import-namegqn.html</link><description>&lt;p&gt;После перезагрузки рабочего компьютера с windows server 2003 меня
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 26 Jul 2010 21:11:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-07-26:mail-agent-in-pidgin.html</guid></item><item><title>Ошибка в django-gis</title><link>https://dicos.ru/cannot-import-namegqn.html</link><description>&lt;p&gt;После перезагрузки рабочего компьютера с windows server 2003 меня
 порадовала джанга такой ошибкой:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;div class="line-block"&gt;
@@ -1049,7 +1049,7 @@ fields__temp, ибо вдруг еще пригодится.&lt;/p&gt;
 &lt;p&gt;UPD: не у одного у меня такая же возникала проблема, решение проблемы
 такое же
 &lt;a class="reference external" href="http://groups.google.com/group/geodjango/browse_thread/thread/88fc94ed57ab153d"&gt;http://groups.google.com/group/geodjango/browse_thread/thread/88fc94ed57ab153d&lt;/a&gt;&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 19 Jul 2010 15:51:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-07-19:cannot-import-namegqn.html</guid></item><item><title>Установка django-gis</title><link>http://dicos.ru/setup-django-gis.html</link><description>&lt;p&gt;Я постараюсь описать установку geo django так как я делал у себя на
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 19 Jul 2010 15:51:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-07-19:cannot-import-namegqn.html</guid></item><item><title>Установка django-gis</title><link>https://dicos.ru/setup-django-gis.html</link><description>&lt;p&gt;Я постараюсь описать установку geo django так как я делал у себя на
 машинах с установленными операционными системами линукс (убунту), так и
 виндовс (сервер 2003). В качестве СУБД выбрал postgres&lt;/p&gt;
 &lt;p&gt;Установка на убунту 10.04: Итак, для начала нам надо установить все
@@ -1082,7 +1082,7 @@ p libgeosruby1.8 - GEOS bindings for Ruby
 каталог, в котором содержится файл spatial_ref_sys.sql. Этот каталог и
 нужно было подставить в переменную POSTGIS_SQL_PATH. Для начала можно
 попробовать запустить sh скрипты, которые представлены в оф.
-документации. Если эти скрипты не заработают, представляю свою &lt;a class="reference external" href="http://dicos.ru/wp-content/uploads/2010/06/create_template_postgis.sh.tar"&gt;версию
+документации. Если эти скрипты не заработают, представляю свою &lt;a class="reference external" href="https://dicos.ru/wp-content/uploads/2010/06/create_template_postgis.sh.tar"&gt;версию
 установщика базы
 даннх&lt;/a&gt;.
 Внутри архива 2 скрипта с версиями 1.3 и 1.4 первый предназначен для
@@ -1138,7 +1138,7 @@ Files\PostgreSQL\8.4\bin&lt;/p&gt;
 &lt;div id="_mcePaste"
 style="position: absolute; left: -10000px; top: 627px; width: 1px; height: 1px; overflow-x: hidden; overflow-y: hidden; text-align: left;"&gt;&lt;p&gt;&lt;a class="reference external" href="http://www.google.com/search?hl=ru&amp;amp;pwst=1&amp;amp;&amp;amp;sa=X&amp;amp;ei=t88gTIucFIq6ONPN0Gs&amp;amp;ved=0CBUQvwUoAQ&amp;amp;q=ERROR%3A+relation+%22spatial_ref_sys%22+does+not+exist&amp;amp;spell=1"&gt;ERROR: relation &amp;quot;spatial_ref_sys&amp;quot; does not
 ***exist***&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Wed, 07 Jul 2010 09:12:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-07-07:setup-django-gis.html</guid></item><item><title>Нет DjangoUnicodeDecodeError</title><link>http://dicos.ru/djangounicodedecodeerror.html</link><description>&lt;p&gt;Недавно администрировал сервер, нужно было установить работающий проект.
+&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Wed, 07 Jul 2010 09:12:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-07-07:setup-django-gis.html</guid></item><item><title>Нет DjangoUnicodeDecodeError</title><link>https://dicos.ru/djangounicodedecodeerror.html</link><description>&lt;p&gt;Недавно администрировал сервер, нужно было установить работающий проект.
 Сразу отмечу, что в качестве СУБД был взят MySQL, так как он уже был
 установлен и настроен. База данных успешно была создана, кодировка этой
 базы utf8. Но начав помещать тестовые данные столкнулся с пролемой:&lt;/p&gt;
@@ -1240,7 +1240,7 @@ ges',
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 31 May 2010 18:15:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-05-31:djangounicodedecodeerror.html</guid></item><item><title>treebeard не сохраняет данные в админке</title><link>http://dicos.ru/treebeard-not-save-admin.html</link><description>&lt;p&gt;Сегодня, после обновления джанги до 1.2 появился косяк с модулем
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 31 May 2010 18:15:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-05-31:djangounicodedecodeerror.html</guid></item><item><title>treebeard не сохраняет данные в админке</title><link>https://dicos.ru/treebeard-not-save-admin.html</link><description>&lt;p&gt;Сегодня, после обновления джанги до 1.2 появился косяк с модулем
 &lt;a class="reference external" href="https://tabo.pe/projects/django-treebeard/docs/tip/"&gt;treebeard&lt;/a&gt;.
 Этот модуль я использую для построения дерева документов. На лицевой
 части все работало идеально, но в админке данные не хотели сохраняться.
@@ -1256,16 +1256,16 @@ page &amp;quot;Главная&amp;quot; был успешно изменен. Н
 сайта&lt;/a&gt; архив. Архивы
 предоставляются на выбор: gz, zip и bz2. P.S. список архивов можно
 увидеть, наведя на текст в правом углу «get source»&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sat, 22 May 2010 12:47:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-05-22:treebeard-not-save-admin.html</guid></item><item><title>Как определить кодировку строки в питоне</title><link>http://dicos.ru/how-encoding-string.html</link><description>&lt;p&gt;Для этого создана библиотека
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sat, 22 May 2010 12:47:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-05-22:treebeard-not-save-admin.html</guid></item><item><title>Как определить кодировку строки в питоне</title><link>https://dicos.ru/how-encoding-string.html</link><description>&lt;p&gt;Для этого создана библиотека
 &lt;a class="reference external" href="http://chardet.feedparser.org/"&gt;chardet&lt;/a&gt;. Мне она пригодилась для
 написания парсера писем, приходящих по рассылке в тогда неизвестной мне
 кодировке.&lt;/p&gt;
 &lt;p&gt;Для того, чтобы ею воспользоваться, нужно распаковать архив, и потом
 выполнить команду python setup.py с правами рута. Если не охота это
 делать, то можно просто скопировать каталог chardet в рабочую папку.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sat, 15 May 2010 12:35:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-05-15:how-encoding-string.html</guid></item><item><title>Полезные команды linux</title><link>http://dicos.ru/best-commands.html</link><description>&lt;p&gt;Наткнулся сегодня на достаточно полезный, на мой взгляд, &lt;a class="reference external" href="http://www.lyabah.com/index.php/2010/02/03/%D1%83%D0%B7%D0%BD%D0%B0%D0%B5%D0%BC-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5-%D0%BE-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%B5/"&gt;список
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sat, 15 May 2010 12:35:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-05-15:how-encoding-string.html</guid></item><item><title>Полезные команды linux</title><link>https://dicos.ru/best-commands.html</link><description>&lt;p&gt;Наткнулся сегодня на достаточно полезный, на мой взгляд, &lt;a class="reference external" href="http://www.lyabah.com/index.php/2010/02/03/%D1%83%D0%B7%D0%BD%D0%B0%D0%B5%D0%BC-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5-%D0%BE-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%B5/"&gt;список
 команд&lt;/a&gt;.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Fri, 07 May 2010 12:06:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-05-07:best-commands.html</guid></item><item><title>treebeard выдало сообщение об ошибке</title><link>http://dicos.ru/treebeard-error.html</link><description>&lt;p&gt;После того, как я выложил на рабочий сервер свой проект, часть сайта,
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Fri, 07 May 2010 12:06:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-05-07:best-commands.html</guid></item><item><title>treebeard выдало сообщение об ошибке</title><link>https://dicos.ru/treebeard-error.html</link><description>&lt;p&gt;После того, как я выложил на рабочий сервер свой проект, часть сайта,
 доступная простым смертным работала нормально с тестовыми данными. Не
 работала только закрытая часть, то есть админка. Вернее модуль,
 позволяющий создавать страницы с текстом сообщал мне об ошибке.&lt;/p&gt;
@@ -1434,7 +1434,7 @@ adjacence list. Кроме того, у него отличная докумен
 /usr/lib/python2.5/site-packages/treebeard/templates/) а также добавить
 &lt;a class="reference external" href="http://docs.djangoproject.com/en/dev/ref/templates/api/#django-core-context-processors-request"&gt;django-core-context-processors-request&lt;/a&gt; в
 &lt;a class="reference external" href="http://docs.djangoproject.com/en/dev/ref/settings/#template-context-processors"&gt;TEMPLATE_CONTEXT_PROCESSORS&lt;/a&gt;&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 25 Apr 2010 22:58:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-04-25:treebeard-error.html</guid></item><item><title>Создать пользователя с домашним каталогом</title><link>http://dicos.ru/how-create-user-with-home-catalog.html</link><description>&lt;p&gt;useradd -m user_name&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 25 Apr 2010 22:58:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-04-25:treebeard-error.html</guid></item><item><title>Создать пользователя с домашним каталогом</title><link>https://dicos.ru/how-create-user-with-home-catalog.html</link><description>&lt;p&gt;useradd -m user_name&lt;/p&gt;
 &lt;p&gt;Хорошая статья по управлению пользователями в линуксе на сайте
 &lt;a class="reference external" href="http://stfw.ru/page.php?id=9945"&gt;STFW.RU&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Полный список опций взял с этого же сайта:&lt;/p&gt;
@@ -1475,8 +1475,8 @@ adjacence list. Кроме того, у него отличная докумен
 &lt;div class="line"&gt;-u идентиф._номер Идентификационный номер пользователя. По умолчанию
 автоматически задается следующий по порядку доступный номер.&lt;/div&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 25 Apr 2010 21:57:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-04-25:how-create-user-with-home-catalog.html</guid></item><item><title>Фото галерея на sorl-thumbnail</title><link>http://dicos.ru/sorl-thumbnail.html</link><description>&lt;p&gt;Некогда я рассказал о своем опыте пользования фото галереей
-&lt;a class="reference external" href="http://dicos.ru/2010/03/django-photologue/"&gt;Photologue&lt;/a&gt;. Недавно
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 25 Apr 2010 21:57:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-04-25:how-create-user-with-home-catalog.html</guid></item><item><title>Фото галерея на sorl-thumbnail</title><link>https://dicos.ru/sorl-thumbnail.html</link><description>&lt;p&gt;Некогда я рассказал о своем опыте пользования фото галереей
+&lt;a class="reference external" href="https://dicos.ru/2010/03/django-photologue/"&gt;Photologue&lt;/a&gt;. Недавно
 радость сменилась разочарованием в этой фото галереи: очень громоздкая,
 когда мне надо было сделать очень простую фото галерейку. Мне
 посоветовали использовать
@@ -1484,7 +1484,7 @@ adjacence list. Кроме того, у него отличная докумен
 нескольких полей, которые можно использовать в моделях таблиц для
 хранения изображений. То есть сохраняется исходный файл, но также
 создаются изображения для пред.просмотра (файлы меньшего размера).&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 18 Apr 2010 12:16:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-04-18:sorl-thumbnail.html</guid><category>django</category><category>фото галерея</category></item><item><title>Админка джанги как интерфейс к БД 1</title><link>http://dicos.ru/django-admin-db-1.html</link><description>&lt;p&gt;Понадобилось создать базу данных квартир и независимую от операционной
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 18 Apr 2010 12:16:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-04-18:sorl-thumbnail.html</guid><category>django</category><category>фото галерея</category></item><item><title>Админка джанги как интерфейс к БД 1</title><link>https://dicos.ru/django-admin-db-1.html</link><description>&lt;p&gt;Понадобилось создать базу данных квартир и независимую от операционной
 системы визуальный интерфейс. В организации используются как windows
 (использовался) так и linux. База данных должна обеспечить работу
 нескольких операторов одновременно. Поэтому, СУБД должна быть
@@ -1518,7 +1518,7 @@ ODBC только в том, что можно изменять структур
 питоновского фреймворка django. Оба фреймворка позволяют отойти от&amp;nbsp; SQL
 запросов в базу данных при помощи своих ORM. Питон мне стал нравиться
 больше, поэтому от Symphony я отказался.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 18 Apr 2010 11:08:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-04-18:django-admin-db-1.html</guid></item><item><title>Ставим шлюз с биллингом</title><link>http://dicos.ru/setup-gateway-with-billing.html</link><description>&lt;p&gt;В шлюзе (компьютер, который обеспечивает подступ в интернет другим
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sun, 18 Apr 2010 11:08:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-04-18:django-admin-db-1.html</guid></item><item><title>Ставим шлюз с биллингом</title><link>https://dicos.ru/setup-gateway-with-billing.html</link><description>&lt;p&gt;В шлюзе (компьютер, который обеспечивает подступ в интернет другим
 компьютерам организации) должно стоять 2 сетевых карты: одна для
 подключения внутренней сети, вторая для подключения интернета.&lt;/p&gt;
 &lt;p&gt;Сперва проверим, определились ли сетевые карты, введя команду&lt;/p&gt;
@@ -1748,7 +1748,7 @@ sudo nano /etc/squid/squid.conf&lt;/p&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://free.upit-systems.com/forum/topic_243#post-6"&gt;http://free.upit-systems.com/forum/topic_243#post-6&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.openkazan.info/TraffPro_NAT_Ubuntu_Linux"&gt;http://www.openkazan.info/TraffPro_NAT_Ubuntu_Linux&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 05 Apr 2010 13:53:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-04-05:setup-gateway-with-billing.html</guid></item><item><title>django-photologue: установка и настройка</title><link>http://dicos.ru/django-photologue.html</link><description>&lt;p&gt;Наткнулся на готовую фото
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 05 Apr 2010 13:53:00 +0700</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-04-05:setup-gateway-with-billing.html</guid></item><item><title>django-photologue: установка и настройка</title><link>https://dicos.ru/django-photologue.html</link><description>&lt;p&gt;Наткнулся на готовую фото
 галерею&amp;nbsp;«&lt;a class="reference external" href="http://code.google.com/p/django-photologue/"&gt;django-photologue&lt;/a&gt;»
 для джанги. Мне она приглянулась по нескольким причинам:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -1831,7 +1831,7 @@ images? (yes, no):yes&lt;/p&gt;
 &lt;p&gt;Далее задаются вопросы о том, стоит ли задать значения для уменьшенного
 «большого» изображений. Смысл вводимых параметров совпадает с
 перечисленными выше.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 08 Mar 2010 23:30:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-03-08:django-photologue.html</guid></item><item><title>О книге Макконнелла «Совершенный код»</title><link>http://dicos.ru/code_complete.html</link><description>&lt;p&gt;Мне давно рекомендовали прочитать эту книгу, дескать, ее необходимо
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Mon, 08 Mar 2010 23:30:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-03-08:django-photologue.html</guid></item><item><title>О книге Макконнелла «Совершенный код»</title><link>https://dicos.ru/code_complete.html</link><description>&lt;p&gt;Мне давно рекомендовали прочитать эту книгу, дескать, ее необходимо
 прочитать каждому программисту. И действительно, фразы наподобие
 «Программисты склонны рассматривать менеджеров как низшую ступень
 технической эволюции, где-то между одноклеточными организмами и
@@ -1863,7 +1863,7 @@ images? (yes, no):yes&lt;/p&gt;
 или приводили к отрицательному результату. Таким образом, Макконнелл
 доказал, что быстрый код на питоне это красивый код.&lt;/p&gt;
 &lt;p&gt;` &lt;a class="reference external" href="//img-fotki.yandex.ru/get/60436/44073636.2/0_132e35_dfb1c233_orig"&gt;&lt;img alt="так выглядят баги" class="alignnone size-medium wp-image-16" src="//img-fotki.yandex.ru/get/60436/44073636.2/0_132e35_dfb1c233_orig" style="width: 365px; height: 172px;" /&gt;&lt;/a&gt;&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sat, 09 Jan 2010 22:26:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-01-09:code_complete.html</guid></item><item><title>Первая запись</title><link>http://dicos.ru/first_post.html</link><description>&lt;p&gt;Первая запись в блоге, что первая программа «Hello world», написанная на
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">admin</dc:creator><pubDate>Sat, 09 Jan 2010 22:26:00 +0600</pubDate><guid isPermaLink="false">tag:dicos.ru,2010-01-09:code_complete.html</guid></item><item><title>Первая запись</title><link>https://dicos.ru/first_post.html</link><description>&lt;p&gt;Первая запись в блоге, что первая программа «Hello world», написанная на
 незнакомом языке: ни разу с первого раза не работали, приходилось
 изучать внимательно код (1-2 строчки), читать документацию. И так, в
 первом посте пишут о том, чему посвящается этот блог. Он посвящен
